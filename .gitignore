@@ -1,0 +1,5 @@
+*.txt
+out/*
+CHANGELOG.md
+data/data
+logs/log
