@@ -1,0 +1,20 @@
+{
+    "DataLogger": {
+        "backupCount": 28,
+        "when": "h",
+        "interval": 25,
+        "filename": "data",
+        "levels": ["INFO", "WARNING"]
+    },
+    "InfoLogger": {
+        "backupCount": 10,
+        "maxBytes": 1000000,
+        "filename": "log",
+        "levels": ["INFO", "INFO"]
+    },
+    "Data": {
+       "factors": [1, 1, 1, 1],
+       "delta_time": 60,
+       "smoothing": true 
+    }
+}

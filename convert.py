@@ -13,7 +13,7 @@ import scipy.io
 
 data: Dict[str, np.ndarray] = {}  # a numpy array for each week
 
-header = ["Timestamp"] + [f"dms{i+1}" for i in range(4)] + [f"temp{i+1}" for i in range(4)]
+header = ["Timestamp"] + [f"dms{i+1}" for i in range(4)] + [f"temp{i+1}" for i in range(4)] + ["n"]
 start_time: float = 0
 
 
