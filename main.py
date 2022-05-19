@@ -73,7 +73,7 @@ def get_offset() -> np.ndarray:
                     # file didn't contain any data
                     continue
                 difference = datetime.datetime.now() - datetime.datetime.strptime(lines[-1].split(",")[0], "%Y-%m-%d %H:%M:%S")
-                if difference > datetime.timedelta(seconds=60 * 10):
+                if difference > datetime.timedelta(seconds=60 * 5):
                     logger.warning(
                         f"Time difference between last logged value and current time is very large: {difference.total_seconds():.0f}s."
                     )
