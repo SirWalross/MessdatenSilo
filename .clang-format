@@ -9,5 +9,5 @@ PointerAlignment: Left
 AllowShortFunctionsOnASingleLine: Empty
 NamespaceIndentation: All
 AllowShortIfStatementsOnASingleLine: Never
-AlignConsecutiveAssignments: 'true'
+AlignConsecutiveAssignments: 'false'
 ColumnLimit: 120
