@@ -1,4 +1,3 @@
-
 #include <DHT.h>
 
 #define DHT1_Pin 6
