@@ -28,7 +28,17 @@ core_list_installed=$(echo -e $core_list | grep "^$core")
 
 if [[ -z $core_list_installed ]]
 then
-    echo -e "\x1b[33mWarning: Core $core for board $fqbn is not installed.\x1b[0m\nInstalling..."
+    echo -e "\x1b[33mWarning: Core $core for board $fqbn is not installed.\x1b[0m"
+
+    while true; do
+        read -p "Would you like to install the core? [Y/n]: " yn
+        case $yn in
+            [Yy]*) break  ;;  
+            [Nn]*) echo "Aborted" ; exit 1 ;;
+        esac
+    done
+
+    echo -e "Installing..."
 
     arduino-cli core install $core
 
@@ -49,7 +59,7 @@ echo "Compiling sketches..."
 compile=$(arduino-cli compile --fqbn $fqbn DmsMessung)
 if [[ $? -gt 0 ]]
 then
-    echo -e "\x1b[31mError: compilation of DmsMessung failed:\x1b[0m"
+    echo -e "\x1b[31mError: Compilation of DmsMessung failed:\x1b[0m"
     echo -e "$compile"
     echo -e "Exiting."
     exit 1
@@ -58,7 +68,7 @@ fi
 compile=$(arduino-cli compile --fqbn $fqbn Temperaturmessung)
 if [[ $? -gt 0 ]]
 then
-    echo -e "\x1b[31mError: compilation of Temperaturmessung failed:\x1b[0m"
+    echo -e "\x1b[31mError: Compilation of Temperaturmessung failed:\x1b[0m"
     echo -e "$compile"
     echo -e "Exiting."
     exit 1
@@ -69,7 +79,7 @@ echo "Uploading sketches..."
 upload=$(arduino-cli upload -p $serial_dms --fqbn $fqbn DmsMessung)
 if [[ $? -gt 0 ]]
 then
-    echo -e "\x1b[31mError: upload of DmsMessung failed:\x1b[0m"
+    echo -e "\x1b[31mError: Upload of DmsMessung failed:\x1b[0m"
     echo -e "$upload"
     echo -e "Exiting."
     exit 1
@@ -78,7 +88,7 @@ fi
 upload=$(arduino-cli upload -p $serial_temp --fqbn $fqbn Temperaturmessung)
 if [[ $? -gt 0 ]]
 then
-    echo -e "\x1b[31mError: upload of Temperaturmessung failed:\x1b[0m"
+    echo -e "\x1b[31mError: Upload of Temperaturmessung failed:\x1b[0m"
     echo -e "$upload"
     echo -e "Exiting."
     exit 1
