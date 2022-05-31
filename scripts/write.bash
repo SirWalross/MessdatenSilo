@@ -4,9 +4,19 @@ cd `dirname "$0"`/../sketches
 
 fqbn=arduino:avr:nano
 core=arduino:avr
-serial_dms=/dev/ttyACM0
-serial_temp=/dev/ttyACM1
 
+id=$(python3 ../scripts/serial_id.py)
+
+if [[ $id != "0" ]]
+then
+    serial_dms=/dev/ttyACM0
+    serial_temp=/dev/ttyACM1
+else
+    serial_temp=/dev/ttyACM0
+    serial_dms=/dev/ttyACM1
+fi
+
+echo -e "Info: DMS arduino: $serial_dms, Temp arduino: $serial_temp"
 
 echo "Checking connected devices..."
 
