@@ -7,13 +7,13 @@ DataLogger:
 
 InfoLogger:
     backupCount: 10 # number of logs to keep
-    maxBytes: 1000000 # size of single log
+    maxBytes: 1000000 # size of single log in bytes
     filename: log # filename for logs
     levels: # log level for outputting to file and to stdout respectivly
         - INFO
         - WARNING
 
 Data:
-    factors: [1, 1, 1, 0.9] # factors for the 4 dms
+    factors: [1, 1, 1, 1] # factors for the 4 dms
     delta_time: 30 # time between logging data
-    smoothing: false # wether to smoothe the logged data
+    smoothing: false # whether to smoothe the logged data

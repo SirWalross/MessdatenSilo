@@ -7,13 +7,18 @@ core=arduino:avr
 
 id=$(python3 ../scripts/serial_id.py)
 
-if [[ $id != "0" ]]
+if [[ $id == "1" ]]
 then
     serial_dms=/dev/ttyACM0
     serial_temp=/dev/ttyACM1
-else
+elif [[ $id == "0" ]]
+then
     serial_temp=/dev/ttyACM0
     serial_dms=/dev/ttyACM1
+else
+    echo -e "\x1b[31mError: Something went wrong.\x1b[0m"
+    echo -e "Exiting"
+    exit 1
 fi
 
 echo -e "Info: DMS arduino: $serial_dms, Temp arduino: $serial_temp"
@@ -25,7 +30,7 @@ connected_devices=$(echo -e $device_list | grep "^\(\($serial_dms\)\|\($serial_t
 
 if [[ $connected_devices != "2" ]] 
 then
-    echo -e "\x1b[31mError: not all arduino devices are connected\x1b[0m"
+    echo -e "\x1b[31mError: not all arduino devices are connected,\x1b[0m"
     echo -e "Connected devices are:\n$device_list"
     echo -e "Exiting."
     exit 1

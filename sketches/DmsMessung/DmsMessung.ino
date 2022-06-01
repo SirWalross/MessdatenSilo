@@ -1,16 +1,27 @@
 #include <HX711_ADC.h>
+#include "cstring"
 
 HX711_ADC loadCells[] = {HX711_ADC(2, 3), HX711_ADC(6, 7), HX711_ADC(8, 9), HX711_ADC(12, 13)};
 float measurements[4];
 float offsets[4];
 
-int count = 1000;
+int count = 100;
 long stabilization = 2000;
 
 void readData() {
+    // write the averaged data over 'count' measurements into 'measurements'.
+
+    std::memset(measurements, 0, sizeof measurements); // zero out measurements
+
+    for (int i = 0; i < count; i++) {
+        for (int j = 0; j < sizeof(loadCells) / sizeof(*loadCells); j++) {
+            loadCells[j].update();
+            measurements[j] += loadCells[j].getRareData() - offsets[j];
+        }
+    }
+
     for (int i = 0; i < sizeof(loadCells) / sizeof(*loadCells); i++) {
-        loadCells[i].update();
-        measurements[i] = loadCells[i].getRareData() - offsets[i];
+        measurements[i] /= count;
     }
 }
 
@@ -21,12 +32,11 @@ void setup() {
         loadCells[i].begin();
 
         loadCells[i].start(stabilization, true);
-
-        loadCells[i].update();
-
-        // zero out load cells
-        offsets[i] = loadCells[i].getRareData();
     }
+
+    // zero out load cells
+    readData();
+    std::memcpy(offsets, measurements, sizeof offsets);
 }
 
 void loop() {

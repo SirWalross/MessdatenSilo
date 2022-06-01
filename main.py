@@ -77,8 +77,8 @@ def get_offset() -> np.ndarray:
                         f"Time difference between last logged value and current time is very large: {difference.total_seconds():.0f}s."
                     )
                 return np.array([float(num) for num in lines[-1].split(",")[1:5]])
-    # didnt find any old files, so no offset
-    logger.warning(f"Didnt find any old offsets, so starting at 0.")
+    # didn't find any old files, so no offset
+    logger.warning(f"Didn't find any old offsets, so starting at 0.")
     return np.array([0, 0, 0, 0])
 
 
