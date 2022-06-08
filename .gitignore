@@ -3,3 +3,5 @@ out/*
 CHANGELOG.md
 data/data
 logs/log
+profiling.log
+profiling_trace.json
