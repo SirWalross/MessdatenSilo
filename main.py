@@ -35,7 +35,7 @@ class TimedRotatingFileHandlerWithHeader(logging.handlers.TimedRotatingFileHandl
                 if self.shouldRollover(record):
                     self.doRollover()
                 stream = self.stream
-                if self._header and self._header not in self.stream.readlines():
+                if self._header:
                     stream.write(self._header + self.terminator)
             else:
                 stream = self.stream

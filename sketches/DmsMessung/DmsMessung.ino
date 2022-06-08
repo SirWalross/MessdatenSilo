@@ -5,7 +5,7 @@ HX711_ADC loadCells[] = {HX711_ADC(2, 3), HX711_ADC(6, 7), HX711_ADC(8, 9), HX71
 float measurements[4];
 float offsets[4];
 
-int count = 100;
+int count = 100; // number of measurements
 long stabilization = 2000;
 
 void readData() {
