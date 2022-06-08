@@ -150,25 +150,31 @@ def main(config: Any) -> None:
         recv1, recv2 = None, None
         off1, off2 = None, None
         while datetime.datetime.now() - datetime.timedelta(seconds=delta_time) < end_time:
-            con1.write(1)
-            con2.write(2)
 
             try:
                 new_data = data.copy()
 
                 # offsets for writing data of each arduino in correct column
+
+                
+                con1.write(1)
                 off1 = 0 if int(convert(con1.readline())) == 1.0 else 4
-                off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
 
                 # read data
                 for i in range(4):
                     recv1 = con1.readline()
-                    recv2 = con2.readline()
                     new_data[i + off1] += float(convert(recv1))
+                    recv1 = None
+                    
+                con2.write(2)
+                off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+
+                for i in range(4):
+                    recv2 = con2.readline()
                     new_data[i + off2] += float(convert(recv2))
-                    recv1, recv2 = None, None
+                    recv2 = None
+
                 n += 1
-                off1, off2 = None, None
                 data = new_data
             except (TypeError, ValueError):
                 # may occur if no data was read over serial
@@ -176,7 +182,7 @@ def main(config: Any) -> None:
 
             if time.time() - last_write > delta_time:
                 # write data
-                data_logger.info(",".join([f"{value/n * factors[i] + offsets[i]:.5f}" for i, value in enumerate(data)]) + f",{n}")
+                data_logger.info(",".join([f"{value/n * factors[i]:.5f}" for i, value in enumerate(data)]) + f",{n}")
                 logger.debug("Wrote data")
                 n = 0
                 data = np.zeros((8,))

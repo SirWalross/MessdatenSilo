@@ -28,8 +28,8 @@ void loop() {
         for (int i = 0; i < sizeof(dhts) / sizeof(*dhts); i++) {
             float temp = dhts[i].readTemperature();
 
-            Serial.println(temp);
             delay(10);
+            Serial.println(temp);
         }
     }
 }

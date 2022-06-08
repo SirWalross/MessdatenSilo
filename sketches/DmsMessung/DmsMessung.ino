@@ -13,7 +13,7 @@ static float Offset2 = 0;
 static float Offset3 = 0;
 static float Offset4 = 0;
 
-int anzahl         = 100;
+int anzahl         = 1000;
 int caltime        = 2;
 float calFac       = 2429;
 float calFac2      = 2406;
@@ -135,7 +135,6 @@ void writeInData() {
         delay(10);
         // Serial.print("Zelle 4    ");
         Serial.println(messwert4);
-        delay(10);
     }
 }
 
