@@ -182,7 +182,7 @@ def main(config: Any) -> None:
 
             if time.time() - last_write > delta_time:
                 # write data
-                data_logger.info(",".join([f"{value/n * factors[i]:.5f}" for i, value in enumerate(data)]) + f",{n}")
+                data_logger.info(",".join([f"{(value/n) * factors[i]:.5f}" for i, value in enumerate(data)]) + f",{n}")
                 logger.debug("Wrote data")
                 n = 0
                 data = np.zeros((8,))

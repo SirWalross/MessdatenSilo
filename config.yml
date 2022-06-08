@@ -14,6 +14,6 @@ InfoLogger:
         - WARNING
 
 Data:
-    factors: [9.6474, 0, 10.9132, -11.6764] # factors for the 4 dms
+    factors: [1.74, 0, 0.9, -0.96] # factors for the 4 dms
     delta_time: 30 # time between logging data
     smoothing: false # whether to smoothe the logged data

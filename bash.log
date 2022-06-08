@@ -1,3 +1,13 @@
 2022-06-08 12:53:41
 fatal: unable to access 'https://github.com/SirWalross/MessdatenSilo.git/': Could not resolve host: github.com
 
+[main c7812e5] New data
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+fatal: unable to access 'https://github.com/SirWalross/MessdatenSilo.git/': Could not resolve host: github.com
+
+2022-06-08 12:53:42, WARNING, [main_logger.main:136]	Starting
+2022-06-08 12:53:42, WARNING, [main_logger.get_offset:81]	Didn't find any old offsets, so starting at 0.
+2022-06-08 12:53:42, WARNING, [main_logger.main:146]	Connected to serial ports
+2022-06-08 13:03:02
+fatal: unable to access 'https://github.com/SirWalross/MessdatenSilo.git/': Could not resolve host: github.com
+
