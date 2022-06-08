@@ -7,13 +7,13 @@
 
 #define DHT_Typ DHT11
 
-DHT dths[] = {DHT(DHT1_Pin, DHT_Typ), DHT(DHT2_Pin, DHT_Typ), DHT(DHT3_Pin, DHT_Typ), DHT(DHT4_Pin, DHT_Typ)};
+DHT dhts[] = {DHT(DHT1_Pin, DHT_Typ), DHT(DHT2_Pin, DHT_Typ), DHT(DHT3_Pin, DHT_Typ), DHT(DHT4_Pin, DHT_Typ)};
 
 void setup() {
     Serial.begin(9600);
 
-    for (int i = 0; i < sizeof(dhts); i++) {
-        dths[i].begin();
+    for (int i = 0; i < sizeof(dhts) / sizeof(*dhts); i++) {
+        dhts[i].begin();
     }
 }
 
@@ -25,7 +25,7 @@ void loop() {
 
         Serial.println(2);  // for identification
 
-        for (int i = 0; i < sizeof(dths) / sizeof(*dths); i++) {
+        for (int i = 0; i < sizeof(dhts) / sizeof(*dhts); i++) {
             float temp = dhts[i].readTemperature();
 
             Serial.println(temp);

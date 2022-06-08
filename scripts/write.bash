@@ -2,7 +2,7 @@
 
 cd `dirname "$0"`/../sketches
 
-fqbn=arduino:avr:nano
+fqbn=arduino:avr:uno
 core=arduino:avr
 
 id=$(python3 ../scripts/serial_id.py)
@@ -11,14 +11,15 @@ if [[ $id == "1" ]]
 then
     serial_dms=/dev/ttyACM0
     serial_temp=/dev/ttyACM1
-elif [[ $id == "0" ]]
+elif [[ $id == "2" ]]
 then
     serial_temp=/dev/ttyACM0
     serial_dms=/dev/ttyACM1
 else
     echo -e "\x1b[31mError: Something went wrong.\x1b[0m"
     echo -e "Exiting"
-    exit 1
+    serial_dms=/dev/ttyACM1
+    serial_temp=/dev/ttyACM0
 fi
 
 echo -e "Info: DMS arduino: $serial_dms, Temp arduino: $serial_temp"
@@ -26,20 +27,22 @@ echo -e "Info: DMS arduino: $serial_dms, Temp arduino: $serial_temp"
 echo "Checking connected devices..."
 
 device_list=$(arduino-cli board list)
-connected_devices=$(echo -e $device_list | grep "^\(\($serial_dms\)\|\($serial_temp\)\).*$fqbn.*$core$" | wc -l)
+connected_devices=$(echo $device_list | grep "^\(\($serial_dms\)\|\($serial_temp\)\).*$fqbn.*$core" | wc -l)
 
 if [[ $connected_devices != "2" ]] 
 then
-    echo -e "\x1b[31mError: not all arduino devices are connected,\x1b[0m"
+    echo -e "\x1b[31mError: not all arduino devices are connected, only found: $connected_devices.\x1b[0m"
     echo -e "Connected devices are:\n$device_list"
     echo -e "Exiting."
-    exit 1
+    
 fi
 
 echo "Checking installed cores..."
 
 core_list=$(arduino-cli core list)
-core_list_installed=$(echo -e $core_list | grep "^$core")
+core_list_installed=$(echo $core_list | grep "$core")
+echo $core_list
+echo $core_list | grep "$core"
 
 if [[ -z $core_list_installed ]]
 then
@@ -91,7 +94,7 @@ fi
 
 echo "Uploading sketches..."
 
-upload=$(arduino-cli upload -p $serial_dms --fqbn $fqbn DmsMessung)
+upload=$(arduino-cli upload --port $serial_dms --fqbn $fqbn DmsMessung)
 if [[ $? -gt 0 ]]
 then
     echo -e "\x1b[31mError: Upload of DmsMessung failed:\x1b[0m"
@@ -100,7 +103,7 @@ then
     exit 1
 fi
 
-upload=$(arduino-cli upload -p $serial_temp --fqbn $fqbn Temperaturmessung)
+upload=$(arduino-cli upload --port $serial_temp --fqbn $fqbn Temperaturmessung)
 if [[ $? -gt 0 ]]
 then
     echo -e "\x1b[31mError: Upload of Temperaturmessung failed:\x1b[0m"

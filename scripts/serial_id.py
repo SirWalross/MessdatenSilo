@@ -9,7 +9,8 @@ if __name__ == "__main__":
             con.write(1)
 
             try:
-                print(int(con.readline().decode("utf-8")))
+                data = con.readline().decode("utf-8").replace('\r','').replace('\n','')
+                print(int(float(data)))
                 break
             except (TypeError, ValueError):
                 time.sleep(1)
