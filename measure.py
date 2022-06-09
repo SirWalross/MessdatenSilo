@@ -33,34 +33,38 @@ prof_logger.addHandler(handler)
 install_mp_handler(prof_logger)
 
 
+def log_event(**kwargs):
+    prof_logger.debug(json.dumps(kwargs))
+
+
+def time_usec() -> int:
+    return int(round(1e6 * time.time()))
+
+
+base_info = {
+    "pid": os.getpid(),
+    "tid": threading.current_thread().ident,
+}
+
+
 def log_profile(category: str = None):
     def decorator(f):
         @wraps(f)
         def wrapper(*args, **kwargs):
             # format compatible with chrome://tracing
             # info: https://www.gamasutra.com/view/news/176420/Indepth_Using_Chrometracing_to_view_your_inline_profiling_data.php
-            base_info = {
-                "name": f.__name__,
-                "pid": os.getpid(),
-                "tid": threading.current_thread().ident,
-                "cat": category,
-            }
 
-            def log_event(**kwargs):
-                prof_logger.debug(json.dumps(kwargs))
-
-            def time_usec():
-                return int(round(1e6 * time.time()))
+            args_str = {i: f"{arg}" for i, arg in enumerate(args)}
 
             start_time = time_usec()
-            log_event(ph="B", ts=start_time, **base_info)
+            log_event(ph="B", ts=start_time, name=f.__name__, cat=category, args=args_str, **base_info)
 
             result = f(*args, **kwargs)
 
             end_time = time_usec()
             duration = end_time - start_time
             # TODO: duration could possibly be computed afterwards (if we can pair the events correctly)
-            log_event(ph="E", ts=end_time, duration=duration, **base_info)
+            log_event(ph="E", ts=end_time, duration=duration, name=f.__name__, cat=category, args=args_str, **base_info)
 
             return result
 
@@ -75,10 +79,15 @@ def convert_log_to_trace(log_file, trace_file):
         json.dump({"traceEvents": events}, output)
 
 
-@log_profile("compute")
+@log_profile("read_value")
+def read_value(connection: serial.Serial) -> bytes:
+    return connection.readline()
+
+
+@log_profile("read")
 def read(connection: serial.Serial):
     for _ in range(4):
-        recv1 = connection.readline()
+        recv1 = read_value(connection)
         float(convert(recv1))
 
 
@@ -112,6 +121,7 @@ def get_data(con1: serial.Serial, con2: serial.Serial):
 
     except (TypeError, ValueError):
         # may occur if no data was read over serial
+        log_event(ph="I", ts=time_usec(), name="NoData", cat="NoData", **base_info)
         print("Didn't receive data from arduino")
 
 
