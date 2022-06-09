@@ -19,3 +19,38 @@ Merge made by the 'recursive' strategy.
  2 files changed, 136 insertions(+), 1 deletion(-)
  create mode 100644 measure.py
 
+[main 8647a31] New data
+ 1 file changed, 18 insertions(+)
+To https://github.com/SirWalross/MessdatenSilo.git
+   ce80ee2..8647a31  main -> main
+
+2022-06-09 00:00:05, WARNING, [main_logger.main:136]	Starting
+2022-06-09 00:00:05, WARNING, [main_logger.get_offset:81]	Didn't find any old offsets, so starting at 0.
+2022-06-09 00:00:05, WARNING, [main_logger.main:146]	Connected to serial ports
+2022-06-09 00:00:06, ERROR, [main_logger.handle_exception:57]	Uncaught exception
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 197, in <module>
+    main(yaml.safe_load(open(f"{Path(__file__).parent}/config.yml")))
+  File "main.py", line 161, in main
+    off1 = 0 if int(convert(con1.readline())) == 1.0 else 4
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+2022-06-09 00:00:31, WARNING, [main_logger.main:193]	Finished
+
+2022-06-10 00:00:01
+Von https://github.com/SirWalross/MessdatenSilo
+   8647a31..dca944d  main       -> origin/main
+Aktualisiere 8647a31..dca944d
+Fast-forward
+ measure.py | 40 +++++++++++++++++++++++++---------------
+ 1 file changed, 25 insertions(+), 15 deletions(-)
+
