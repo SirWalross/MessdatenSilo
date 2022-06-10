@@ -54,3 +54,16 @@ Fast-forward
  measure.py | 40 +++++++++++++++++++++++++---------------
  1 file changed, 25 insertions(+), 15 deletions(-)
 
+[main d853004] New data
+ 2 files changed, 38 insertions(+)
+ create mode 100644 data/log.2022-06-08_13.log
+Uploading LFS objects: 100% (1/1), 112 KB | 0 B/s, done
+To https://github.com/SirWalross/MessdatenSilo.git
+   dca944d..d853004  main -> main
+
+2022-06-10 00:00:08, WARNING, [main_logger.main:136]	Starting
+2022-06-10 00:00:08, WARNING, [main_logger.get_offset:77]	Time difference between last logged value and current time is very large: 86407s.
+2022-06-10 00:00:09, WARNING, [main_logger.main:146]	Connected to serial ports
+2022-06-11 00:00:01
+Bereits aktuell.
+
