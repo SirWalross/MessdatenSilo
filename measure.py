@@ -136,7 +136,7 @@ def loop(con1: serial.Serial, con2: serial.Serial):
 
 def main() -> None:
     with serial.Serial("/dev/ttyACM0", 9600, timeout=3) as con1, serial.Serial("/dev/ttyACM1", 9600, timeout=3) as con2:
-        for _ in range(100):
+        for _ in range(50):
             loop(con1, con2)
 
 
