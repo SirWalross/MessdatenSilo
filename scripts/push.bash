@@ -4,6 +4,8 @@ ls -la .
 ls -la data
 ls -la log
 
+scripts/./write.bash
+
 pip install multiprocessing_logging
 python3 measure.py
 

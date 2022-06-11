@@ -44,6 +44,7 @@ core_list_installed=$(echo "$core_list" | grep "^$core")
 if [[ -z $core_list_installed ]]
 then
     echo -e "\x1b[33mWarning: Core $core for board $fqbn is not installed.\x1b[0m"
+    exit 1
 
     while true; do
         read -p "Would you like to install the core? [Y/n]: " yn
