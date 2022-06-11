@@ -18,8 +18,7 @@ then
 else
     echo -e "\x1b[31mError: Something went wrong.\x1b[0m"
     echo -e "Exiting"
-    serial_dms=/dev/ttyACM1
-    serial_temp=/dev/ttyACM0
+    exit 1
 fi
 
 echo -e "Info: DMS arduino: $serial_dms, Temp arduino: $serial_temp"
@@ -27,22 +26,20 @@ echo -e "Info: DMS arduino: $serial_dms, Temp arduino: $serial_temp"
 echo "Checking connected devices..."
 
 device_list=$(arduino-cli board list)
-connected_devices=$(echo $device_list | grep "^\(\($serial_dms\)\|\($serial_temp\)\).*$fqbn.*$core" | wc -l)
+connected_devices=$(echo "$device_list" | grep "^\(\($serial_dms\)\|\($serial_temp\)\).*$fqbn.*$core" | wc -l)
 
 if [[ $connected_devices != "2" ]] 
 then
     echo -e "\x1b[31mError: not all arduino devices are connected, only found: $connected_devices.\x1b[0m"
     echo -e "Connected devices are:\n$device_list"
     echo -e "Exiting."
-    
+    exit 1
 fi
 
 echo "Checking installed cores..."
 
 core_list=$(arduino-cli core list)
-core_list_installed=$(echo $core_list | grep "$core")
-echo $core_list
-echo $core_list | grep "$core"
+core_list_installed=$(echo "$core_list" | grep "^$core")
 
 if [[ -z $core_list_installed ]]
 then
@@ -61,7 +58,7 @@ then
     arduino-cli core install $core
 
     core_list=$(arduino-cli core list)
-    core_list_installed=$(echo -e $core_list | grep "^$core")
+    core_list_installed=$(echo "$core_list" | grep "^$core")
 
     if [[ -z $core_list_installed ]]
     then
