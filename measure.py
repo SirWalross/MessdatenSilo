@@ -8,13 +8,12 @@
 from functools import wraps
 import json
 import logging
-from multiprocessing import Pool
 import os
-import random
 import time
 import threading
+import traceback
 import serial
-import datetime
+import serial.serialutil
 
 from multiprocessing_logging import install_mp_handler
 
@@ -135,9 +134,16 @@ def loop(con1: serial.Serial, con2: serial.Serial):
 
 
 def main() -> None:
-    with serial.Serial("/dev/ttyACM0", 9600, timeout=3) as con1, serial.Serial("/dev/ttyACM1", 9600, timeout=3) as con2:
-        for _ in range(50):
-            loop(con1, con2)
+    print("Starting")
+    try:
+        with serial.Serial("/dev/ttyACM0", 9600, timeout=3) as con1, serial.Serial("/dev/ttyACM1", 9600, timeout=3) as con2:
+            for _ in range(50):
+                loop(con1, con2)
+    except serial.serialutil.SerialException:
+        print(traceback.format_exc())
+    print("Finished")
 
 
-convert_log_to_trace("profiling.log", "profiling_trace.json")
+if __name__ == "__main__":
+    main()
+    convert_log_to_trace("profiling.log", "profiling_trace.json")
