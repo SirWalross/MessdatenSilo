@@ -67,3 +67,95 @@ To https://github.com/SirWalross/MessdatenSilo.git
 2022-06-11 00:00:01
 Bereits aktuell.
 
+[main 09796c4] New data
+ 2 files changed, 16 insertions(+)
+ create mode 100644 data/log.2022-06-09_00.log
+Uploading LFS objects: 100% (1/1), 10 KB | 0 B/s, done
+To https://github.com/SirWalross/MessdatenSilo.git
+   d853004..09796c4  main -> main
+
+2022-06-11 00:00:07, WARNING, [main_logger.main:136]	Starting
+2022-06-11 00:00:07, WARNING, [main_logger.get_offset:77]	Time difference between last logged value and current time is very large: 82779s.
+2022-06-11 00:00:07, WARNING, [main_logger.main:146]	Connected to serial ports
+2022-06-11 00:00:07, ERROR, [main_logger.handle_exception:57]	Uncaught exception
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 197, in <module>
+    main(yaml.safe_load(open(f"{Path(__file__).parent}/config.yml")))
+  File "main.py", line 161, in main
+    off1 = 0 if int(convert(con1.readline())) == 1.0 else 4
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+2022-06-12 00:00:01
+Von https://github.com/SirWalross/MessdatenSilo
+   09796c4..b7e1ab9  main       -> origin/main
+Aktualisiere 09796c4..b7e1ab9
+Fast-forward
+ .gitignore         |  3 +-
+ main.py            | 98 ++++++++++++++++++++++++++++--------------------------
+ measure.py         | 20 +++++++----
+ scripts/push.bash  | 28 ++++++++++++++--
+ scripts/write.bash | 14 ++++----
+ 5 files changed, 97 insertions(+), 66 deletions(-)
+
+insgesamt 76
+drwxr-xr-x 8 pi pi 4096 Jun 12 00:00 .
+drwxr-xr-x 3 pi pi 4096 Mai 25 10:52 ..
+-rw-r--r-- 1 pi pi 5237 Jun 12 00:00 bash.log
+-rw-r--r-- 1 pi pi  311 Mai 25 10:52 .clang-format
+-rw-r--r-- 1 pi pi  635 Jun  8 13:02 config.yml
+-rw-r--r-- 1 pi pi 1832 Mai 25 10:52 convert.py
+drwxr-xr-x 2 pi pi 4096 Jun 10 01:00 data
+drwxr-xr-x 9 pi pi 4096 Jun 12 00:00 .git
+-rw-r--r-- 1 pi pi   43 Mai 25 10:52 .gitattributes
+drwxr-xr-x 3 pi pi 4096 Mai 25 10:52 .github
+-rw-r--r-- 1 pi pi   57 Jun 12 00:00 .gitignore
+drwxr-xr-x 2 pi pi 4096 Jun  8 13:06 logs
+-rw-r--r-- 1 pi pi 7517 Jun 12 00:00 main.py
+-rw-r--r-- 1 pi pi 4096 Jun 12 00:00 measure.py
+-rw-r--r-- 1 pi pi   25 Mai 25 10:52 README.md
+drwxr-xr-x 2 pi pi 4096 Jun 12 00:00 scripts
+drwxr-xr-x 4 pi pi 4096 Mai 25 10:52 sketches
+insgesamt 616
+drwxr-xr-x 2 pi pi   4096 Jun 10 01:00 .
+drwxr-xr-x 8 pi pi   4096 Jun 12 00:00 ..
+-rw-r--r-- 1 pi pi 485642 Jun 11 23:59 data
+-rw-r--r-- 1 pi pi 111922 Jun  9 00:00 log.2022-06-08_13.log
+-rw-r--r-- 1 pi pi  10388 Jun 10 01:00 log.2022-06-09_00.log
+ls: Zugriff auf 'log' nicht möglich: Datei oder Verzeichnis nicht gefunden
+2022-06-12 00:00:03, ERROR, [main_logger.handle_exception:57]	Uncaught exception
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 197, in <module>
+    logger.warning("Finished")
+  File "main.py", line 165, in main
+    for i in range(4):
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+[31mError: Something went wrong.[0m
+Exiting
+
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting multiprocessing_logging
+  Downloading https://files.pythonhosted.org/packages/19/5b/4efe65bcf7a9d0cda56912b4cf12647aad505a99325f0f56698b2d5e747a/multiprocessing_logging-0.3.3-py2.py3-none-any.whl
+Installing collected packages: multiprocessing-logging
+Successfully installed multiprocessing-logging-0.3.3
+Traceback (most recent call last):
+  File "measure.py", line 18, in <module>
+    from multiprocessing_logging import install_mp_handler
+ModuleNotFoundError: No module named 'multiprocessing_logging'
