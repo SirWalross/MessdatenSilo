@@ -26,6 +26,7 @@ void loop() {
         Serial.println(2);  // for identification
 
         for (int i = 0; i < sizeof(dhts) / sizeof(*dhts); i++) {
+            dhts[i].readHumidity();
             float temp = dhts[i].readTemperature();
 
             delay(10);
