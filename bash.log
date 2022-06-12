@@ -159,3 +159,240 @@ Traceback (most recent call last):
   File "measure.py", line 18, in <module>
     from multiprocessing_logging import install_mp_handler
 ModuleNotFoundError: No module named 'multiprocessing_logging'
+[main 5f7ff3c] New data
+ 1 file changed, 92 insertions(+)
+To https://github.com/SirWalross/MessdatenSilo.git
+   b7e1ab9..5f7ff3c  main -> main
+Starting python script:
+
+scripts/./push.bash: Zeile 15: loop_count: Kommando nicht gefunden.
+2022-06-12 00:00:16, WARNING, [main_logger.main:137]	Starting
+2022-06-12 00:00:16, WARNING, [main_logger.get_offset:82]	Didn't find any old offsets, so starting at 0.
+2022-06-12 00:00:16, WARNING, [main_logger.main:148]	Connected to serial ports
+2022-06-13 00:00:01
+Von https://github.com/SirWalross/MessdatenSilo
+   5f7ff3c..38b04c9  main       -> origin/main
+ * [neues Tag]       latest     -> latest
+Aktualisiere 5f7ff3c..38b04c9
+Fast-forward
+ .gitignore                                       | 2 --
+ scripts/pull.bash                                | 7 +++++++
+ scripts/push.bash                                | 5 +++--
+ sketches/Temperaturmessung/Temperaturmessung.ino | 1 +
+ 4 files changed, 11 insertions(+), 4 deletions(-)
+
+insgesamt 80
+drwxr-xr-x 8 pi pi 4096 Jun 13 00:00 .
+drwxr-xr-x 3 pi pi 4096 Mai 25 10:52 ..
+-rw-r--r-- 1 pi pi 8890 Jun 13 00:00 bash.log
+-rw-r--r-- 1 pi pi  311 Mai 25 10:52 .clang-format
+-rw-r--r-- 1 pi pi  635 Jun  8 13:02 config.yml
+-rw-r--r-- 1 pi pi 1832 Mai 25 10:52 convert.py
+drwxr-xr-x 2 pi pi 4096 Jun 10 01:00 data
+drwxr-xr-x 9 pi pi 4096 Jun 13 00:00 .git
+-rw-r--r-- 1 pi pi   43 Mai 25 10:52 .gitattributes
+drwxr-xr-x 3 pi pi 4096 Mai 25 10:52 .github
+-rw-r--r-- 1 pi pi   38 Jun 13 00:00 .gitignore
+drwxr-xr-x 2 pi pi 4096 Jun  8 13:06 logs
+-rw-r--r-- 1 pi pi 7517 Jun 12 00:00 main.py
+-rw-r--r-- 1 pi pi 4096 Jun 12 00:00 measure.py
+-rw-r--r-- 1 pi pi   25 Mai 25 10:52 README.md
+drwxr-xr-x 2 pi pi 4096 Jun 13 00:00 scripts
+drwxr-xr-x 4 pi pi 4096 Mai 25 10:52 sketches
+insgesamt 860
+drwxr-xr-x 2 pi pi   4096 Jun 10 01:00 .
+drwxr-xr-x 8 pi pi   4096 Jun 13 00:00 ..
+-rw-r--r-- 1 pi pi 733944 Jun 12 23:59 data
+-rw-r--r-- 1 pi pi 111922 Jun  9 00:00 log.2022-06-08_13.log
+-rw-r--r-- 1 pi pi  10388 Jun 10 01:00 log.2022-06-09_00.log
+insgesamt 156
+drwxr-xr-x 2 pi pi   4096 Jun  8 13:06 .
+drwxr-xr-x 8 pi pi   4096 Jun 13 00:00 ..
+-rw-r--r-- 1 pi pi 144338 Jun 12 23:52 log
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.2  33764  8216 ?        Ss   Jun08   0:10 /sbin/init splash
+root         2  0.0  0.0      0     0 ?        S    Jun08   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        I<   Jun08   0:00 [rcu_gp]
+root         4  0.0  0.0      0     0 ?        I<   Jun08   0:00 [rcu_par_gp]
+root         8  0.0  0.0      0     0 ?        I<   Jun08   0:00 [mm_percpu_wq]
+root         9  0.0  0.0      0     0 ?        S    Jun08   0:00 [rcu_tasks_rude_]
+root        10  0.0  0.0      0     0 ?        S    Jun08   0:00 [rcu_tasks_trace]
+root        11  0.0  0.0      0     0 ?        S    Jun08   0:19 [ksoftirqd/0]
+root        12  0.0  0.0      0     0 ?        I    Jun08   0:02 [rcu_sched]
+root        13  0.0  0.0      0     0 ?        S    Jun08   0:00 [migration/0]
+root        14  0.0  0.0      0     0 ?        S    Jun08   0:00 [cpuhp/0]
+root        15  0.0  0.0      0     0 ?        S    Jun08   0:00 [cpuhp/1]
+root        16  0.0  0.0      0     0 ?        S    Jun08   0:00 [migration/1]
+root        17  0.0  0.0      0     0 ?        S    Jun08   0:00 [ksoftirqd/1]
+root        20  0.0  0.0      0     0 ?        S    Jun08   0:00 [cpuhp/2]
+root        21  0.0  0.0      0     0 ?        S    Jun08   0:00 [migration/2]
+root        22  0.0  0.0      0     0 ?        S    Jun08   0:00 [ksoftirqd/2]
+root        25  0.0  0.0      0     0 ?        S    Jun08   0:00 [cpuhp/3]
+root        26  0.0  0.0      0     0 ?        S    Jun08   0:00 [migration/3]
+root        27  0.0  0.0      0     0 ?        S    Jun08   0:00 [ksoftirqd/3]
+root        30  0.0  0.0      0     0 ?        S    Jun08   0:00 [kdevtmpfs]
+root        31  0.0  0.0      0     0 ?        I<   Jun08   0:00 [netns]
+root        35  0.0  0.0      0     0 ?        S    Jun08   0:00 [kauditd]
+root        36  0.0  0.0      0     0 ?        S    Jun08   0:00 [khungtaskd]
+root        37  0.0  0.0      0     0 ?        S    Jun08   0:00 [oom_reaper]
+root        38  0.0  0.0      0     0 ?        I<   Jun08   0:00 [writeback]
+root        39  0.0  0.0      0     0 ?        S    Jun08   0:29 [kcompactd0]
+root        57  0.0  0.0      0     0 ?        I<   Jun08   0:00 [kblockd]
+root        58  0.0  0.0      0     0 ?        I<   Jun08   0:00 [blkcg_punt_bio]
+root        59  0.0  0.0      0     0 ?        S    Jun08   0:00 [watchdogd]
+root        60  0.0  0.0      0     0 ?        I    Jun08   1:29 [kworker/3:1-events_power_efficient]
+root        61  0.0  0.0      0     0 ?        I<   Jun08   0:00 [kworker/1:1H-kblockd]
+root        62  0.0  0.0      0     0 ?        I<   Jun08   0:00 [rpciod]
+root        63  0.0  0.0      0     0 ?        I<   Jun08   0:00 [kworker/u9:0-hci0]
+root        64  0.0  0.0      0     0 ?        I<   Jun08   0:00 [xprtiod]
+root        65  0.0  0.0      0     0 ?        S    Jun08   0:00 [kswapd0]
+root        66  0.0  0.0      0     0 ?        I<   Jun08   0:00 [nfsiod]
+root        67  0.0  0.0      0     0 ?        I<   Jun08   0:00 [kthrotld]
+root        68  0.0  0.0      0     0 ?        I<   Jun08   0:00 [iscsi_eh]
+root        69  0.0  0.0      0     0 ?        I<   Jun08   0:00 [iscsi_destroy]
+root        72  0.0  0.0      0     0 ?        I<   Jun08   0:00 [DWC Notificatio]
+root        73  0.0  0.0      0     0 ?        I<   Jun08   0:00 [uas]
+root        75  0.0  0.0      0     0 ?        S<   Jun08   0:00 [vchiq-slot/0]
+root        76  0.0  0.0      0     0 ?        S<   Jun08   0:00 [vchiq-recy/0]
+root        77  0.0  0.0      0     0 ?        S<   Jun08   0:00 [vchiq-sync/0]
+root        78  0.0  0.0      0     0 ?        I<   Jun08   0:00 [zswap-shrink]
+root        79  0.0  0.0      0     0 ?        I<   Jun08   0:00 [sdhci]
+root        80  0.0  0.0      0     0 ?        S    Jun08   0:00 [irq/47-mmc0]
+root        82  0.0  0.0      0     0 ?        I<   Jun08   0:00 [mmc_complete]
+root        83  0.0  0.0      0     0 ?        I<   Jun08   0:06 [kworker/0:1H-mmc_complete]
+root        84  0.0  0.0      0     0 ?        I<   Jun08   0:00 [kworker/2:1H-kblockd]
+root        85  0.0  0.0      0     0 ?        S    Jun08   0:02 [jbd2/mmcblk0p2-]
+root        86  0.0  0.0      0     0 ?        I<   Jun08   0:00 [ext4-rsv-conver]
+root        88  0.0  0.0      0     0 ?        I<   Jun08   0:00 [ipv6_addrconf]
+root       103  0.0  0.0      0     0 ?        I<   Jun08   0:00 [kworker/3:2H-kblockd]
+root       116  0.0  0.2  21252  8700 ?        Ss   Jun08   0:03 /lib/systemd/systemd-journald
+root       148  0.0  0.1  18472  3936 ?        Ss   Jun08   0:01 /lib/systemd/systemd-udevd
+root       177  0.0  0.0      0     0 ?        S    Jun08   0:00 [vchiq-keep/0]
+root       178  0.0  0.0      0     0 ?        S<   Jun08   0:00 [SMIO]
+root       188  0.0  0.0      0     0 ?        I<   Jun08   0:00 [mmal-vchiq]
+root       190  0.0  0.0      0     0 ?        I<   Jun08   0:00 [mmal-vchiq]
+root       191  0.0  0.0      0     0 ?        I<   Jun08   0:00 [mmal-vchiq]
+root       192  0.0  0.0      0     0 ?        I<   Jun08   0:00 [mmal-vchiq]
+root       212  0.0  0.0      0     0 ?        I<   Jun08   0:00 [cfg80211]
+root       213  0.0  0.0      0     0 ?        S    Jun08   0:00 [card0-crtc0]
+root       232  0.0  0.0      0     0 ?        I<   Jun08   0:00 [brcmf_wq/mmc1:0]
+root       236  0.0  0.0      0     0 ?        S    Jun08   0:00 [brcmf_wdog/mmc1]
+root       241  0.0  0.0      0     0 ?        S    Jun08   0:00 [v3d_bin]
+root       243  0.0  0.0      0     0 ?        S    Jun08   0:00 [v3d_render]
+root       244  0.0  0.0      0     0 ?        S    Jun08   0:00 [v3d_tfu]
+root       245  0.0  0.0      0     0 ?        S    Jun08   0:00 [v3d_csd]
+root       247  0.0  0.0      0     0 ?        S    Jun08   0:00 [v3d_cache_clean]
+root       352  0.0  0.1   7916  4688 ?        Ss   Jun08   0:00 /sbin/dhclient -4 -v -i -pf /run/dhclient.eth0.pid -lf /var/lib/dhcp/dhclient.eth0.leases -I -df /var/lib/dhcp/dhclient6.eth0.leases eth0
+root       354  0.0  0.1  13152  5840 ?        Ss   Jun08   0:01 /lib/systemd/systemd-logind
+root       356  0.0  0.1  11768  4616 ?        SNs  Jun08   0:00 /usr/sbin/alsactl -E HOME=/run/alsa -s -n 19 -c rdaemon
+avahi      364  0.0  0.0   5768  2504 ?        Ss   Jun08   0:00 avahi-daemon: running [raspberrypi.local]
+root       368  0.0  0.0  25512  2996 ?        Ssl  Jun08   0:00 /usr/sbin/rsyslogd -n -iNONE
+root       381  0.0  0.0   7948  2360 ?        Ss   Jun08   0:00 /usr/sbin/cron -f
+avahi      384  0.0  0.0   5768   252 ?        S    Jun08   0:00 avahi-daemon: chroot helper
+root       391  0.0  0.0  27656    80 ?        SLsl Jun08   0:07 /usr/sbin/rngd -r /dev/hwrng
+message+   396  0.0  0.0   6548  3508 ?        Ss   Jun08   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+nobody     408  0.0  0.0   4320  2152 ?        Ss   Jun08   0:03 /usr/sbin/thd --triggers /etc/triggerhappy/triggers.d/ --socket /run/thd.socket --user nobody --deviceglob /dev/input/event*
+root       409  0.0  0.0  10744  3736 ?        Ss   Jun08   0:02 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+systemd+   561  0.0  0.1  21980  5396 ?        Ssl  Jun08   0:01 /lib/systemd/systemd-timesyncd
+root       607  0.0  0.1  10728  5368 ?        Ss   Jun08   0:00 /usr/sbin/sshd -D
+root       608  0.0  0.0   5620  2788 tty1     Ss   Jun08   0:00 /bin/login -f
+root       615  0.0  0.0      0     0 ?        I<   Jun08   0:00 [kworker/u9:2-hci0]
+root       616  0.0  0.0   2140   128 ?        S    Jun08   0:00 /usr/bin/hciattach /dev/serial1 bcm43xx 3000000 flow -
+root       621  0.0  0.0   9536  3300 ?        Ss   Jun08   0:00 /usr/lib/bluetooth/bluetoothd
+pi         630  0.0  0.1  14704  7376 ?        Ss   Jun08   0:00 /lib/systemd/systemd --user
+pi         631  0.0  0.0  35188  3532 ?        S    Jun08   0:00 (sd-pam)
+pi         641  0.0  0.0   8492  3768 tty1     S+   Jun08   0:00 -bash
+root      4427  0.0  0.0   9468  1964 ?        S    Jun12   0:00 /usr/sbin/CRON -f
+pi        4428  0.0  0.0   1940   380 ?        Ss   Jun12   0:00 /bin/sh -c /home/pi/Desktop/MessdatenSilo/scripts/pull.bash
+pi        4429  0.0  0.0   7676  2500 ?        S    Jun12   0:00 /bin/bash /home/pi/Desktop/MessdatenSilo/scripts/pull.bash
+pi        4465  0.0  0.0   7676  2468 ?        S    Jun12   0:00 /bin/bash scripts/./push.bash
+pi        4466  0.0  0.0   6824   324 ?        S    Jun12   0:00 tee -a bash.log
+pi        4554  0.1  0.5  36172 19696 ?        S    Jun12   2:07 python3 main.py
+root      4569  0.0  0.1  27908  6668 ?        Ss   Jun12   0:00 /usr/sbin/cupsd -l
+root      4571  0.0  0.2  40496  8672 ?        Ssl  Jun12   0:00 /usr/sbin/cups-browsed
+root      4581  0.0  0.0      0     0 ?        I<   Jun12   0:00 [kworker/3:1H]
+root      5048  0.0  0.0      0     0 ?        I    Jun12   0:08 [kworker/u8:0-events_unbound]
+root      5119  0.0  0.0      0     0 ?        I<   Jun12   0:00 [kworker/1:0H]
+root      5176  0.0  0.0      0     0 ?        I    Jun12   0:00 [kworker/2:0-events]
+root      5265  0.0  0.0      0     0 ?        I<   Jun12   0:00 [kworker/0:2H]
+root      5442  0.0  0.0      0     0 ?        I    Jun12   0:00 [kworker/2:1]
+root      5543  0.0  0.0      0     0 ?        I<   Jun12   0:00 [kworker/2:2H]
+root      5546  0.0  0.0      0     0 ?        I    Jun12   0:00 [kworker/u8:2-ext4-rsv-conversion]
+root      5557  0.0  0.0      0     0 ?        I    Jun12   0:00 [kworker/3:0]
+root      5565  0.0  0.0      0     0 ?        I    Jun12   0:00 [kworker/0:3-events]
+root      5615  0.0  0.0      0     0 ?        I    Jun12   0:00 [kworker/0:1-events]
+root      5617  0.0  0.0      0     0 ?        I    Jun12   0:00 [kworker/1:1-events]
+root      5618  0.0  0.0      0     0 ?        I    Jun12   0:00 [kworker/0:0-events]
+root      5619  0.0  0.0      0     0 ?        I    Jun12   0:00 [kworker/1:2-events_power_efficient]
+root      5620  0.0  0.0      0     0 ?        I    Jun12   0:00 [kworker/1:0-events]
+root      5621  0.0  0.0      0     0 ?        I    Jun12   0:00 [kworker/0:2-events]
+root      5622  1.0  0.0   9468  1964 ?        S    00:00   0:00 /usr/sbin/CRON -f
+pi        5623  0.0  0.0   1940   376 ?        Ss   00:00   0:00 /bin/sh -c /home/pi/Desktop/MessdatenSilo/scripts/pull.bash
+pi        5624  1.0  0.0   7676  2500 ?        S    00:00   0:00 /bin/bash /home/pi/Desktop/MessdatenSilo/scripts/pull.bash
+pi        5658  0.0  0.0   7676  2528 ?        S    00:00   0:00 /bin/bash scripts/./push.bash
+pi        5659  0.0  0.0   6824   336 ?        S    00:00   0:00 tee -a bash.log
+pi        5663  0.0  0.0   9788  2520 ?        R    00:00   0:00 ps aux
+[31mError: Something went wrong.[0m
+Exiting
+Looking in indexes: https://pypi.org/simple, https://www.piwheels.org/simple
+Collecting multiprocessing_logging
+  Using cached https://files.pythonhosted.org/packages/19/5b/4efe65bcf7a9d0cda56912b4cf12647aad505a99325f0f56698b2d5e747a/multiprocessing_logging-0.3.3-py2.py3-none-any.whl
+Installing collected packages: multiprocessing-logging
+Successfully installed multiprocessing-logging-0.3.3
+2022-06-13 00:00:13, ERROR, [main_logger.main:192]	SerialException was caught, shutting down.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 166, in main
+    recv1 = con1.readline()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+Ended with error, waiting and trying again
+2022-06-13 00:01:14, WARNING, [main_logger.main:137]	Starting
+2022-06-13 00:01:14, WARNING, [main_logger.get_offset:82]	Didn't find any old offsets, so starting at 0.
+2022-06-13 00:01:14, WARNING, [main_logger.main:148]	Connected to serial ports
+Starting
+Didn't receive data from arduino
+Didn't receive data from arduino
+Didn't receive data from arduino
+Didn't receive data from arduino
+Didn't receive data from arduino
+writing data
+writing data
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 501, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "measure.py", line 141, in main
+    loop(con1, con2)
+  File "measure.py", line 61, in wrapper
+    result = f(*args, **kwargs)
+  File "measure.py", line 132, in loop
+    get_data(con1, con2)
+  File "measure.py", line 61, in wrapper
+    result = f(*args, **kwargs)
+  File "measure.py", line 119, in get_data
+    read(connection)
+  File "measure.py", line 61, in wrapper
+    result = f(*args, **kwargs)
+  File "measure.py", line 89, in read
+    recv1 = read_value(connection)
+  File "measure.py", line 61, in wrapper
+    result = f(*args, **kwargs)
+  File "measure.py", line 83, in read_value
+    return connection.readline()
+  File "/usr/lib/python3/dist-packages/serial/serialposix.py", line 509, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+Finished
