@@ -2,11 +2,12 @@
 
 ls -la .
 ls -la data
-ls -la log
+ls -la logs
+ps aux
 
 scripts/./write.bash
 
-pip install multiprocessing_logging
+pip3 install multiprocessing_logging
 python3 measure.py
 
 git add .
