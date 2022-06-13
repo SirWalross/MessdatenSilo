@@ -132,7 +132,7 @@ def main(config: Any) -> None:
     setup_loggers(config)
 
     delta_time = config["Data"]["delta_time"]  # log averaged out data every n seconds
-    end_time = datetime.datetime.combine(datetime.date.today(), datetime.time(23, 59, 59, 999999))  # end at 23:59:59 of the day
+    end_time = datetime.datetime.combine(datetime.date.today(), datetime.time(23, 59, 0, 0))  # end at 23:59:00 of the day
 
     logger.warning("Starting")
 
@@ -151,7 +151,7 @@ def main(config: Any) -> None:
             n = 0
             recv1, recv2 = None, None
             off1, off2 = None, None
-            while datetime.datetime.now() - datetime.timedelta(seconds=4 * delta_time) < end_time:
+            while datetime.datetime.now() + datetime.timedelta(seconds=delta_time) < end_time:
 
                 try:
                     new_data = data.copy()
@@ -183,7 +183,7 @@ def main(config: Any) -> None:
 
                 if time.time() - last_write > delta_time:
                     # write data
-                    data_logger.info(",".join([f"{(value/n) * factors[i]:.5f}" for i, value in enumerate(data)]) + f",{n}")
+                    data_logger.info(",".join([f"{(value/n) * factors[i] - offsets[i]:.5f}" for i, value in enumerate(data)]) + f",{n}")
                     logger.debug("Wrote data")
                     n = 0
                     data = np.zeros((8,))
