@@ -133,6 +133,7 @@ def loop(con1: serial.Serial, con2: serial.Serial):
     write_data()
 
 
+@log_profile("main")
 def main() -> None:
     print("Starting")
     try:

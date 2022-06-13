@@ -17,6 +17,7 @@ then
     serial_dms=/dev/ttyACM1
 else
     echo -e "\x1b[31mError: Something went wrong.\x1b[0m"
+    echo "$id"
     echo -e "Exiting"
     exit 1
 fi
