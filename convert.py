@@ -7,11 +7,11 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import glob
 from time import strptime, time
-from typing import Dict
+from typing import Dict, Optional
 import numpy as np
 import scipy.io
 
-data: Dict[str, np.ndarray] = {}  # a numpy array for each week
+data: Dict[str, np.ndarray] = {}  # a dict of numpy array's, one for each week
 
 header = ["Timestamp"] + [f"dms{i+1}" for i in range(4)] + [f"temp{i+1}" for i in range(4)] + ["n"]
 start_time: float = 0
@@ -25,11 +25,14 @@ def convertfunc(x: bytes) -> float:
 
 
 files = sorted(glob.glob(str(Path.joinpath(Path(__file__).parent, "data", "log.*.log"))))
+
 for file in files:
     date = datetime(*strptime(Path(file).suffixes[0][1:].split("_")[0], "%Y-%m-%d")[:6]) - timedelta(days=2)
-    week_start = (date  - timedelta(days=date.weekday()) + timedelta(days=2)).strftime("%Y-%m-%d")
+    week_start = (date - timedelta(days=date.weekday()) + timedelta(days=2)).strftime("%Y-%m-%d")
 
     csv_data = np.genfromtxt(file, skip_header=1, delimiter=",", converters={0: convertfunc})
+
+    # either add the data from one day to already existing entry for that week or create new entry
     if week_start in data.keys():
         data[week_start] = np.vstack((data[week_start], csv_data))
     else:
@@ -37,6 +40,7 @@ for file in files:
 
 Path(f"{Path(__file__).parent}/out").mkdir(parents=True, exist_ok=True)
 
+# save each week as seperate '.mat' file
 for week_start, arr in data.items():
     scipy.io.savemat(
         f"{Path(__file__).parent}/out/data.{week_start}.mat",
