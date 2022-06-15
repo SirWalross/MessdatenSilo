@@ -1,6 +1,9 @@
 name: Convert data to .mat file(s)
 
 on:
+  push:
+    branches:
+      - "main"
   schedule:
       - cron: "0 1 * * 0,3"
 
@@ -26,23 +29,12 @@ jobs:
         python3 convert.py
         cd out && zip ../data.zip ./* && cd -
     - name: release
-      uses: actions/create-release@v1
-      id: create_release
+      uses: "marvinpinto/action-automatic-releases@latest"
       with:
-        draft: false
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
         prerelease: false
-        release_name: "Data"
-        tag_name: latest
+        title: "Data"
+        automatic_release_tag: latest
         body_path: ./CHANGELOG.md
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Upload out artifacts
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./data.zip
-        asset_name: data.zip
-        asset_content_type: application/zip
-        
+        files: |
+          data.zip
