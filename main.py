@@ -143,54 +143,50 @@ def main(config: Any) -> None:
         f"Factors: {', '.join(f'{factor:.3f}' for factor in factors[:4])}, Offset: {', '.join(f'{offset:.3f}' for offset in offsets[:4])}"
     )
 
-    try:
-        with serial.Serial("/dev/ttyACM0", 9600, timeout=3) as con1, serial.Serial("/dev/ttyACM1", 9600, timeout=3) as con2:
-            logger.warning("Connected to serial ports")
-            last_write = time.time()
-            data = np.zeros((8,))
-            n = 0
-            recv1, recv2 = None, None
-            off1, off2 = None, None
-            while datetime.datetime.now() + datetime.timedelta(seconds=delta_time) < end_time:
+    with serial.Serial("/dev/ttyACM0", 9600, timeout=3) as con1, serial.Serial("/dev/ttyACM1", 9600, timeout=3) as con2:
+        logger.warning("Connected to serial ports")
+        last_write = time.time()
+        data = np.zeros((8,))
+        n = 0
+        recv1, recv2 = None, None
+        off1, off2 = None, None
+        while datetime.datetime.now() + datetime.timedelta(seconds=delta_time) < end_time:
 
-                try:
-                    new_data = data.copy()
+            try:
+                new_data = data.copy()
 
-                    # offsets for writing data of each arduino in correct column
+                # offsets for writing data of each arduino in correct column
 
-                    con1.write(1)
-                    off1 = 0 if int(convert(con1.readline())) == 1.0 else 4
+                con1.write(1)
+                off1 = 0 if int(convert(con1.readline())) == 1.0 else 4
 
-                    # read data
-                    for i in range(4):
-                        recv1 = con1.readline()
-                        new_data[i + off1] += float(convert(recv1))
-                        recv1 = None
+                # read data
+                for i in range(4):
+                    recv1 = con1.readline()
+                    new_data[i + off1] += float(convert(recv1))
+                    recv1 = None
 
-                    con2.write(2)
-                    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+                con2.write(2)
+                off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
 
-                    for i in range(4):
-                        recv2 = con2.readline()
-                        new_data[i + off2] += float(convert(recv2))
-                        recv2 = None
+                for i in range(4):
+                    recv2 = con2.readline()
+                    new_data[i + off2] += float(convert(recv2))
+                    recv2 = None
 
-                    n += 1
-                    data = new_data
-                except (TypeError, ValueError):
-                    # may occur if no data was read over serial
-                    logger.info(f"Didn't receive data from arduino, off1: {off1}, off2: {off2}, recv1: {recv1}, recv2: {recv2}")
+                n += 1
+                data = new_data
+            except (TypeError, ValueError):
+                # may occur if no data was read over serial
+                logger.info(f"Didn't receive data from arduino, off1: {off1}, off2: {off2}, recv1: {recv1}, recv2: {recv2}")
 
-                if time.time() - last_write > delta_time:
-                    # write data
-                    data_logger.info(",".join([f"{(value/n) * factors[i] - offsets[i]:.5f}" for i, value in enumerate(data)]) + f",{n}")
-                    logger.debug("Wrote data")
-                    n = 0
-                    data = np.zeros((8,))
-                    last_write = time.time()
-    except serial.serialutil.SerialException:
-        logger.exception("SerialException was caught, shutting down.")
-        sys.exit(15)
+            if time.time() - last_write > delta_time:
+                # write data
+                data_logger.info(",".join([f"{(value/n) * factors[i] - offsets[i]:.5f}" for i, value in enumerate(data)]) + f",{n}")
+                logger.debug("Wrote data")
+                n = 0
+                data = np.zeros((8,))
+                last_write = time.time()
 
     fh[0].doRollover()
 

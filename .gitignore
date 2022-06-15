@@ -2,3 +2,5 @@
 out/*
 CHANGELOG.md
 profiling.log
+logs/log
+data/data
