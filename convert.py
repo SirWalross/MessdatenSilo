@@ -6,8 +6,9 @@ Combines the files from one weak and converts it into a single '.mat' file.
 from datetime import datetime, timedelta
 from pathlib import Path
 import glob
-from time import strptime, time
-from typing import Dict, Optional
+from time import strptime
+from typing import Dict
+import shutil
 import numpy as np
 import scipy.io
 
@@ -47,6 +48,10 @@ for week_start, arr in data.items():
         mdict={name: column for name, column in zip(header, np.split(arr, arr.shape[1], axis=1))},
     )
 
+# zip folder
+shutil.make_archive("data", "zip", "out")
+
 # Update CHANGELOG.md
 with open(str(Path.joinpath(Path(__file__).parent, "CHANGELOG.md")), "w+") as f:
-    f.write("# Messdaten vom Silo von den Wochen:\n" + "\n".join(["- " + key for key in data.keys()]))
+    f.write("## Messdaten vom Silo von den Wochen:\n" + "\n".join(["- " + key for key in data.keys()]))
+

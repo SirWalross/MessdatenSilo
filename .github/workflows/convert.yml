@@ -1,9 +1,6 @@
 name: Convert data to .mat file(s)
 
 on:
-  push:
-    branches:
-      - "main"
   schedule:
       - cron: "0 1 * * *"
 
@@ -27,7 +24,6 @@ jobs:
     - name: Convert data
       run: |
         python3 convert.py
-        cd out && zip ../data.zip ./* && cd -
     - name: release
       uses: "./.github/actions/automatic-releases"
       with:

@@ -1,0 +1,37 @@
+
+stages:
+  - convert
+  - upload
+  - release
+  
+variables:
+  PACKAGE_REGISTRY_URL: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/my_package/latest/data.zip"
+
+convert:
+  stage: convert
+  image: "python:3.10"
+  script:
+    - python3 -m pip install --upgrade pip
+    - python3 -m pip install numpy scipy
+    - python3 convert.py
+  artifacts:
+    paths:
+      - data.zip
+      - CHANGELOG.md
+
+upload:
+  stage: upload
+  image: curlimages/curl:latest
+  script:
+    - echo "Compiling the code..."
+    - echo "Compile complete."
+  script:
+    - 'curl --header "JOB-TOKEN: ${CI_JOB_TOKEN}" --upload-file data.zip "${PACKAGE_REGISTRY_URL}"'
+
+release:
+  stage: release
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  script:
+    - |
+      release-cli create --name "Data" --tag-name "latest" --description "CHANGELOG.md" \
+        --assets-link "{\"name\":\"data.zip\",\"url\":\"${PACKAGE_REGISTRY_URL}\"}" \
