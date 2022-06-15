@@ -555,4 +555,71 @@ Starting python script:
 2022-06-14 23:58:33, WARNING, [main_logger.main:197]	Finished
 
 Python script ended
-Bereits aktuell.
+Info: DMS arduino: /dev/ttyACM0, Temp arduino: /dev/ttyACM1
+Checking connected devices...
+Checking installed cores...
+Compiling sketches...
+Uploading sketches...
+Finished
+Starting
+Didn't receive data from arduino
+Didn't receive data from arduino
+Didn't receive data from arduino
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+writing data
+Finished
+Starting python script:
+
+2022-06-15 00:26:44, WARNING, [main_logger.main:137]	Starting
+2022-06-15 00:26:44, WARNING, [main_logger.get_offset:82]	Didn't find any old offsets, so starting at 0.
+2022-06-15 00:26:44, WARNING, [main_logger.main:148]	Connected to serial ports
+Beendet
+Ended with error, waiting and trying again
