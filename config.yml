@@ -1,5 +1,5 @@
 DataLogger:
-    backupCount: 28 # number of datalogs to keep
+    backupCount: 70 # number of datalogs to keep
     filename: data # filename for datalogs
     levels: # log level for outputting to file and to stdout respectivly
         - INFO
@@ -7,7 +7,7 @@ DataLogger:
 
 InfoLogger:
     backupCount: 10 # number of logs to keep
-    maxBytes: 1000000 # size of single log in bytes
+    maxBytes: 100000 # size of single log in bytes
     filename: log # filename for logs
     levels: # log level for outputting to file and to stdout respectivly
         - INFO

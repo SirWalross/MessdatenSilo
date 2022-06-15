@@ -101,8 +101,8 @@ def offset(connection: serial.Serial):
 
 
 @log_profile("write_data")
-def write_data():
-    print("writing data")
+def write_data(n: int):
+    print(f"writing data, {n}")
     time.sleep(10e-3)
 
 
@@ -128,9 +128,11 @@ def get_data(con1: serial.Serial, con2: serial.Serial):
 def loop(con1: serial.Serial, con2: serial.Serial):
     last_write = time.time()
     delta_time = 30
+    n = 0
     while time.time() - last_write < delta_time:
         get_data(con1, con2)
-    write_data()
+        n += 1
+    write_data(n)
 
 
 @log_profile("main")

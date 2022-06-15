@@ -8,15 +8,13 @@ while pidof  -x "python3 main.py">/dev/null; do
 done
 sleep 10
 
-ps aux
+# scripts/./write.bash
 
-scripts/./write.bash
+# sleep 10
 
-sleep 10
+# python3 measure.py
 
-python3 measure.py
-
-sleep 10
+# sleep 10
 
 echo -e "Starting python script:\n"
 loop_count=1
