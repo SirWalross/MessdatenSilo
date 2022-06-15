@@ -8,6 +8,10 @@ stages:
 variables:
   PACKAGE_REGISTRY_URL: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/my_package/latest"
 
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    
 convert:
   stage: convert
   image: "python:3.10"
