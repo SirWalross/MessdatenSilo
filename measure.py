@@ -121,7 +121,7 @@ def get_data(con1: serial.Serial, con2: serial.Serial):
     except (TypeError, ValueError):
         # may occur if no data was read over serial
         log_event(ph="I", ts=time_usec(), name="NoData", cat="NoData", **base_info)
-        print("Didn't receive data from arduino")
+        print(f"Didn't receive data from arduino, {traceback.format_exc().replace(os.linesep, '')}")
 
 
 @log_profile("loop")
@@ -140,7 +140,7 @@ def main() -> None:
     print("Starting")
     try:
         with serial.Serial("/dev/ttyACM0", 9600, timeout=3) as con1, serial.Serial("/dev/ttyACM1", 9600, timeout=3) as con2:
-            for _ in range(50):
+            for _ in range(100):
                 loop(con1, con2)
     except serial.serialutil.SerialException:
         print(traceback.format_exc())

@@ -33,8 +33,6 @@ class TimedRotatingFileHandlerWithHeader(logging.handlers.TimedRotatingFileHandl
     def emit(self, record):
         try:
             if self.shouldRollover(record) or self.first:
-                if self.shouldRollover(record):
-                    self.doRollover()
                 stream = self.stream
                 if self._header:
                     stream.write(self._header + self.terminator)
@@ -96,7 +94,7 @@ def setup_loggers(config: Any) -> None:
             header=f"Timestamp,{','.join([f'dms{i+1}' for i in range(4)])},{','.join([f'temp{i+1}' for i in range(4)])},n",
             filename=f"{Path(__file__).parent}/data/{config['DataLogger']['filename']}",
             when="h",
-            interval=25,
+            interval=23,
             backupCount=config["DataLogger"]["backupCount"],
         )
     )
@@ -155,9 +153,9 @@ def main(config: Any) -> None:
             try:
                 new_data = data.copy()
 
-                # offsets for writing data of each arduino in correct column
 
                 con1.write(1)
+                # offsets for writing data in correct column
                 off1 = 0 if int(convert(con1.readline())) == 1.0 else 4
 
                 # read data
@@ -165,20 +163,23 @@ def main(config: Any) -> None:
                     recv1 = con1.readline()
                     new_data[i + off1] += float(convert(recv1))
                     recv1 = None
+                off1 = None
 
                 con2.write(2)
+                # offsets for writing data in correct column
                 off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
 
                 for i in range(4):
                     recv2 = con2.readline()
                     new_data[i + off2] += float(convert(recv2))
                     recv2 = None
+                off2 = None
 
                 n += 1
                 data = new_data
             except (TypeError, ValueError):
-                # may occur if no data was read over serial
-                logger.info(f"Didn't receive data from arduino, off1: {off1}, off2: {off2}, recv1: {recv1}, recv2: {recv2}")
+                # may occur if no data was read over serial, but why???
+                logger.exception(f"Didn't receive data from arduino, off1: {off1}, off2: {off2}, recv1: {recv1}, recv2: {recv2}")
 
             if time.time() - last_write > delta_time:
                 # write data

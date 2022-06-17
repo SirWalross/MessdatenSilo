@@ -21,7 +21,7 @@ void loop() {
     if (Serial.available()) {
         Serial.read();
 
-        delay(10);
+        delay(20);
 
         Serial.println(2);  // for identification
 
@@ -29,7 +29,7 @@ void loop() {
             dhts[i].readHumidity();
             float temp = dhts[i].readTemperature();
 
-            delay(10);
+            delay(20);
             Serial.println(temp);
         }
     }

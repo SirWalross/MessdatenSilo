@@ -77,21 +77,20 @@ void writeInData() {
     if (Serial.available()) {
         Serial.read();
 
-        delay(10);
+        delay(20);
 
         Serial.println(1);
-        delay(10);
 
         regelbetrieb(LoadCell, LoadCell2, LoadCell3, LoadCell4);
 
         Serial.println(messwert);
-        delay(10);
+        delay(20);
 
         Serial.println(messwert2);
-        delay(10);
+        delay(20);
 
         Serial.println(messwert3);
-        delay(10);
+        delay(20);
 
         Serial.println(messwert4);
     }
