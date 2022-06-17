@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Compile and upload the DmsMessung und Temperaturmessung sketches to the
+# arduinos. First getting the serial ports that each arduino is connected
+# to, then checking some things and then compiling and uploading the sketches.
+
 cd `dirname "$0"`/../sketches
 
 fqbn=arduino:avr:uno

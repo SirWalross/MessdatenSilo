@@ -61,7 +61,10 @@ def convert(data) -> str:
 
 
 def get_offset() -> np.ndarray:
-    files = sorted(glob.glob(str(Path.joinpath(Path(__file__).parent, "data", "data.*.log"))))
+    """
+    Try and read the last logged value from the previous datalog file and use that as an offset.
+    """
+    files = sorted(glob.glob(str(Path.joinpath(Path(__file__).parent, "data", "log.*.log"))))
 
     if files:
         for file in files[::-1]:
@@ -85,6 +88,9 @@ sys.excepthook = handle_exception
 
 
 def setup_loggers(config: Any) -> None:
+    """
+    Configure the two loggers. DataLogger for logging the data and InfoLogger for logging various information.
+    """
     global data_logger, logger, fh
     data_logger = logging.getLogger("data_logger")
     data_logger.setLevel(logging.DEBUG)
@@ -92,7 +98,7 @@ def setup_loggers(config: Any) -> None:
     fh.append(
         TimedRotatingFileHandlerWithHeader(
             header=f"Timestamp,{','.join([f'dms{i+1}' for i in range(4)])},{','.join([f'temp{i+1}' for i in range(4)])},n",
-            filename=f"{Path(__file__).parent}/data/{config['DataLogger']['filename']}",
+            filename=f"{Path(__file__).parent}/data/data",
             when="h",
             interval=23,
             backupCount=config["DataLogger"]["backupCount"],
@@ -110,7 +116,7 @@ def setup_loggers(config: Any) -> None:
     bf = logging.Formatter("{asctime}, {levelname}, [{name}.{funcName}:{lineno}]\t{message}", datefmt=r"%Y-%m-%d %H:%M:%S", style="{")
     fh.append(
         logging.handlers.RotatingFileHandler(
-            filename=f"{Path(__file__).parent}/logs/{config['InfoLogger']['filename']}",
+            filename=f"{Path(__file__).parent}/logs/log",
             maxBytes=config["InfoLogger"]["maxBytes"],
             backupCount=config["InfoLogger"]["backupCount"],
         )
@@ -189,7 +195,7 @@ def main(config: Any) -> None:
                 data = np.zeros((8,))
                 last_write = time.time()
 
-    fh[0].doRollover()
+    fh[0].doRollover() # rollover the current data log file
 
     logger.warning("Finished")
 

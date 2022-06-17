@@ -17,22 +17,8 @@ python3 measure.py
 sleep 10
 
 echo -e "Starting python script:\n"
-loop_count=1
-while : ; do
-    python3 main.py
-    return_code=$?
-    if [[ "$return_code" -eq 0 ]]; then
-        echo -e "\nPython script ended"
-        break
-    fi
-    if [[ "$loop_count" -eq 10 ]]; then
-        echo -e "\nPython script failed too many times, trying again tomorrow"
-        break
-    fi
-    echo -e "Ended with error, waiting and trying again"
-    loop_count=$((loop_count + 1))
-    sleep $((loop_count * 60))
-done
+python3 main.py
+echo -e "\nPython script ended"
 
 git pull
 git add .
