@@ -1,770 +1,461 @@
-2022-06-15 11:57:28, WARNING, [main_logger.main:137]	Starting
-2022-06-15 11:57:28, WARNING, [main_logger.get_offset:82]	Didn't find any old offsets, so starting at 0.
-2022-06-15 11:57:28, INFO, [main_logger.main:143]	Factors: 1.855, 0.000, 0.923, -1.000, Offset: 0.000, 0.000, 0.000, 0.000
-2022-06-15 11:57:28, WARNING, [main_logger.main:147]	Connected to serial ports
-2022-06-15 11:57:31, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
-2022-06-15 11:57:34, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
-2022-06-15 11:57:37, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
-2022-06-15 12:32:21, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 12:32:23, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 12:32:25, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 12:32:27, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 12:49:38, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 12:49:40, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 12:49:42, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 12:49:44, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 13:06:27, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 13:06:29, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 13:06:31, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 13:06:33, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 13:23:14, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 13:23:16, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 13:23:18, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 13:23:20, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 13:40:00, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 13:40:02, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 13:40:04, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 13:40:06, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 13:56:46, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 13:56:48, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 13:56:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 13:56:52, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 14:30:55, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 14:30:57, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 14:30:59, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 14:31:01, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 14:48:09, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 14:48:11, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 14:48:13, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 14:48:15, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 15:04:57, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 15:04:59, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 15:05:01, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 15:05:03, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 15:22:11, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 15:22:13, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 15:22:15, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 15:22:17, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 15:38:59, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 15:39:01, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 15:39:03, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 15:39:05, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 15:55:45, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 15:55:47, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 15:55:49, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 15:55:51, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 16:12:59, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 16:13:01, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 16:13:03, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 16:13:05, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 16:29:47, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 16:29:49, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 16:29:51, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 16:29:53, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 16:46:33, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 16:46:35, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 16:46:37, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 16:46:39, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 17:03:48, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 17:03:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 17:03:52, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 17:03:54, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 17:20:39, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 17:20:41, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 17:20:43, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 17:20:45, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 17:37:56, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 17:37:58, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 17:38:00, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 17:38:02, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 17:55:15, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 17:55:17, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 17:55:19, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 17:55:21, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 18:12:35, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 18:12:38, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 18:12:40, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 18:12:42, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 18:29:27, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 18:29:29, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 18:29:31, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 18:29:33, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 18:46:16, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 18:46:18, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 18:46:20, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 18:46:22, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 19:03:04, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 19:03:06, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 19:03:08, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 19:03:10, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 19:19:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 19:19:52, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 19:19:54, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 19:19:56, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 19:36:36, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 19:36:38, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 19:36:41, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 19:36:43, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 19:53:51, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 19:53:53, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 19:53:55, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 19:53:57, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 20:10:39, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 20:10:41, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 20:10:43, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 20:10:45, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 20:27:53, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 20:27:55, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 20:27:57, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 20:27:59, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 21:01:33, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 21:01:35, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 21:01:37, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 21:01:39, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 21:18:47, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 21:18:49, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 21:18:51, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 21:18:53, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 21:36:03, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 21:36:05, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 21:36:07, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 21:36:09, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 21:53:19, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 21:53:21, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 21:53:23, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 21:53:25, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 22:10:07, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 22:10:09, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 22:10:11, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 22:10:13, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 22:26:52, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 22:26:55, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 22:26:57, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 22:26:59, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 22:43:38, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 22:43:40, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 22:43:43, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 22:43:45, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 23:00:24, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 23:00:26, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 23:00:28, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 23:00:30, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 23:17:38, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 23:17:41, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 23:17:43, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 23:17:45, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 23:34:26, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 23:34:29, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 23:34:31, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 23:34:33, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 23:51:41, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 23:51:43, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 23:51:45, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 23:51:47, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-15 23:58:50, WARNING, [main_logger.main:193]	Finished
-2022-06-16 00:26:41, WARNING, [main_logger.main:137]	Starting
-2022-06-16 00:26:41, WARNING, [main_logger.get_offset:82]	Didn't find any old offsets, so starting at 0.
-2022-06-16 00:26:41, INFO, [main_logger.main:143]	Factors: 1.855, 0.000, 0.923, -1.000, Offset: 0.000, 0.000, 0.000, 0.000
-2022-06-16 00:26:41, WARNING, [main_logger.main:147]	Connected to serial ports
-2022-06-16 00:26:44, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
-2022-06-16 00:26:47, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
-2022-06-16 00:26:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
-2022-06-16 00:44:41, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 00:44:43, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 00:44:45, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 00:44:47, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 01:01:30, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 01:01:32, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 01:01:34, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 01:01:36, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 01:18:44, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 01:18:46, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 01:18:48, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 01:18:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 01:36:01, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 01:36:03, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 01:36:05, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 01:36:07, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 01:53:17, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 01:53:19, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 01:53:21, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 01:53:23, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 02:10:05, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 02:10:08, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 02:10:10, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 02:10:12, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 02:27:20, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 02:27:22, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 02:27:24, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 02:27:26, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 02:44:36, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 02:44:38, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 02:44:40, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 02:44:42, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 03:01:24, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 03:01:26, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 03:01:28, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 03:01:30, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 03:18:10, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 03:18:12, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 03:18:14, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 03:18:16, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 03:35:22, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.10\r2\r\n'
-2022-06-16 03:35:25, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.10\r2\r\n'
-2022-06-16 03:35:27, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.10\r2\r\n'
-2022-06-16 03:35:29, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.10\r2\r\n'
-2022-06-16 03:35:31, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.10\r2\r\n'
-2022-06-16 03:52:41, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 03:52:43, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 03:52:45, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 03:52:47, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 04:09:57, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 04:09:59, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 04:10:01, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 04:10:03, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 04:44:07, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 04:44:09, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 04:44:12, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 04:44:14, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 05:01:22, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 05:01:24, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 05:01:26, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 05:01:28, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 05:18:10, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 05:18:12, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 05:18:14, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 05:18:16, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 05:34:55, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 05:34:58, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 05:35:00, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 05:35:02, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 05:51:41, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 05:51:43, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 05:51:46, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 05:51:48, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 06:08:56, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 06:08:58, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 06:09:00, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 06:09:02, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 06:25:44, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 06:25:46, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 06:25:48, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 06:25:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 06:42:58, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 06:43:00, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 06:43:02, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 06:43:04, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 07:00:14, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 07:00:16, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 07:00:18, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 07:00:20, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 07:17:02, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 07:17:04, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 07:17:06, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 07:17:08, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 07:34:16, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 07:34:18, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 07:34:20, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 07:34:22, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 07:51:32, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 07:51:34, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 07:51:36, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 07:51:38, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 08:25:43, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 08:25:45, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 08:25:47, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 08:25:49, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 08:59:49, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 08:59:51, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 08:59:53, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 08:59:55, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 09:34:00, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 09:34:02, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 09:34:04, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 09:34:06, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 09:50:45, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 09:50:48, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 09:50:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 09:50:52, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 10:07:32, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 10:07:34, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 10:07:36, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 10:07:38, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 10:24:17, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 10:24:20, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 10:24:22, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 10:24:24, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 10:41:03, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 10:41:05, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 10:41:08, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 10:41:10, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 10:58:18, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 10:58:20, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 10:58:22, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 10:58:24, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 11:15:06, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 11:15:08, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 11:15:10, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 11:15:12, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 11:31:52, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 11:31:54, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 11:31:56, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 11:31:58, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 11:49:06, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 11:49:08, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 11:49:10, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 11:49:12, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 12:06:22, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 12:06:24, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 12:06:26, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 12:06:28, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 12:23:10, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 12:23:12, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 12:23:15, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 12:23:17, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 12:40:25, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 12:40:27, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 12:40:29, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 12:40:31, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 12:57:41, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 12:57:43, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 12:57:45, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 12:57:47, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 13:14:29, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 13:14:32, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 13:14:34, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 13:14:36, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 13:31:16, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 13:31:18, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 13:31:20, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 13:31:22, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 13:48:28, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-16 13:48:30, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-16 13:48:32, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-16 13:48:34, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-16 13:48:36, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-16 14:05:18, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 14:05:20, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 14:05:22, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 14:05:24, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 14:22:32, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 14:22:34, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 14:22:36, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 14:22:38, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 14:56:43, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 14:56:45, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 14:56:47, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 14:56:49, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 15:13:57, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 15:14:00, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 15:14:02, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 15:14:04, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 15:31:14, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 15:31:16, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 15:31:18, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 15:31:20, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 15:48:02, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 15:48:04, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 15:48:06, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 15:48:08, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 16:04:48, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 16:04:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 16:04:52, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 16:04:54, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 16:21:34, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 16:21:36, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 16:21:39, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 16:21:41, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 16:38:20, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 16:38:22, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 16:38:25, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 16:38:27, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 16:55:07, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 16:55:09, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 16:55:11, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 16:55:13, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 17:11:54, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 17:11:56, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 17:11:58, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 17:12:00, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 17:28:43, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 17:28:45, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 17:28:47, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 17:28:49, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 18:02:29, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 18:02:31, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 18:02:34, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 18:02:36, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 18:19:48, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 18:19:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 18:19:52, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 18:19:54, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 18:36:39, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 18:36:41, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 18:36:44, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 18:36:46, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 18:53:28, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 18:53:30, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 18:53:32, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 18:53:34, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 19:10:15, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 19:10:17, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 19:10:19, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 19:10:21, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 19:27:29, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 19:27:31, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 19:27:33, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 19:27:35, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 19:44:16, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 19:44:18, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 19:44:20, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 19:44:23, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 20:01:30, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 20:01:32, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 20:01:34, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 20:01:36, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 20:18:44, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'31.00\r2\r\n'
-2022-06-16 20:18:46, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'31.00\r2\r\n'
-2022-06-16 20:18:48, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'31.00\r2\r\n'
-2022-06-16 20:18:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'31.00\r2\r\n'
-2022-06-16 20:18:52, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'31.00\r2\r\n'
-2022-06-16 20:52:54, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 20:52:56, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 20:52:58, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 20:53:00, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 21:27:04, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 21:27:06, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 21:27:08, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 21:27:10, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 21:43:47, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'30.10\r2\r\n'
-2022-06-16 21:43:49, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'30.10\r2\r\n'
-2022-06-16 21:43:51, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'30.10\r2\r\n'
-2022-06-16 21:43:53, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'30.10\r2\r\n'
-2022-06-16 21:43:55, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'30.10\r2\r\n'
-2022-06-16 22:00:35, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 22:00:37, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 22:00:39, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 22:00:41, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 22:17:49, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 22:17:51, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 22:17:53, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 22:17:55, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 22:35:05, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 22:35:07, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 22:35:09, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 22:35:11, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 22:51:53, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 22:51:55, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 22:51:57, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 22:51:59, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 23:09:07, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 23:09:09, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 23:09:11, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 23:09:13, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 23:26:23, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 23:26:25, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 23:26:28, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 23:26:30, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-16 23:58:56, WARNING, [main_logger.main:193]	Finished
-2022-06-17 00:26:42, WARNING, [main_logger.main:137]	Starting
-2022-06-17 00:26:42, WARNING, [main_logger.get_offset:82]	Didn't find any old offsets, so starting at 0.
-2022-06-17 00:26:42, INFO, [main_logger.main:143]	Factors: 1.855, 0.000, 0.923, -1.000, Offset: 0.000, 0.000, 0.000, 0.000
-2022-06-17 00:26:42, WARNING, [main_logger.main:147]	Connected to serial ports
-2022-06-17 00:26:45, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
-2022-06-17 00:26:48, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
-2022-06-17 00:26:51, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
-2022-06-17 01:02:05, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 01:02:07, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 01:02:09, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 01:02:11, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 01:36:44, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 01:36:46, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 01:36:48, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 01:36:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 01:54:00, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 01:54:02, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 01:54:04, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 01:54:06, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 02:11:17, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 02:11:19, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 02:11:21, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 02:11:23, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 02:28:33, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 02:28:35, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 02:28:37, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 02:28:39, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 02:45:49, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 02:45:51, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 02:45:53, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 02:45:55, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 03:03:03, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-17 03:03:05, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-17 03:03:07, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-17 03:03:09, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-17 03:03:11, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-17 03:19:53, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 03:19:55, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 03:19:57, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 03:19:59, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 03:37:07, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 03:37:09, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 03:37:11, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 03:37:13, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 03:54:23, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 03:54:26, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 03:54:28, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 03:54:30, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 04:11:40, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 04:11:42, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 04:11:44, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 04:11:46, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 04:28:56, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 04:28:58, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 04:29:00, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 04:29:02, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 04:45:44, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 04:45:46, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 04:45:48, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 04:45:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 05:02:30, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 05:02:32, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 05:02:34, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 05:02:36, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 05:19:44, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 05:19:46, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 05:19:48, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 05:19:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 05:37:00, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 05:37:02, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 05:37:04, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 05:37:06, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 05:53:48, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 05:53:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 05:53:52, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 05:53:54, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 06:10:33, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 06:10:35, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 06:10:38, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 06:10:40, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 06:27:47, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 06:27:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 06:27:52, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 06:27:54, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 06:45:04, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 06:45:06, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 06:45:08, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 06:45:10, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 07:19:42, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 07:19:44, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 07:19:46, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 07:19:48, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 07:53:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 07:53:52, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 07:53:54, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 07:53:56, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 08:11:06, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 08:11:08, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 08:11:11, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 08:11:13, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 08:45:43, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-17 08:45:45, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-17 08:45:47, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-17 08:45:49, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-17 08:45:52, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-17 09:03:02, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 09:03:04, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 09:03:06, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 09:03:08, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 09:19:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 09:19:52, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 09:19:54, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 09:19:56, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 09:54:26, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 09:54:28, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 09:54:30, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 09:54:33, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 10:11:12, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-17 10:11:14, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-17 10:11:16, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-17 10:11:19, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-17 10:11:21, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'29.20\r2\r\n'
-2022-06-17 10:28:29, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 10:28:31, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 10:28:33, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 10:28:35, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 10:45:45, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 10:45:47, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 10:45:49, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 10:45:51, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 11:19:53, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 11:19:55, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 11:19:57, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 11:19:59, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 11:36:41, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 11:36:43, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 11:36:45, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 11:36:47, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 11:53:27, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 11:53:29, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 11:53:31, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 11:53:33, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 12:10:41, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 12:10:43, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 12:10:45, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 12:10:47, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 12:27:29, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 12:27:31, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 12:27:33, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 12:27:35, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 12:44:15, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 12:44:17, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 12:44:19, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 12:44:21, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 13:01:29, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 13:01:31, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 13:01:33, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 13:01:35, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 13:18:46, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 13:18:48, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 13:18:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 13:18:52, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 13:35:32, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'30.00\r2\r\n'
-2022-06-17 13:35:34, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'30.00\r2\r\n'
-2022-06-17 13:35:36, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'30.00\r2\r\n'
-2022-06-17 13:35:38, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'30.00\r2\r\n'
-2022-06-17 13:35:40, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'30.00\r2\r\n'
-2022-06-17 13:52:48, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 13:52:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 13:52:52, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 13:52:54, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 14:10:04, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 14:10:06, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 14:10:09, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 14:10:11, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 14:26:53, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 14:26:55, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 14:26:57, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 14:26:59, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 14:44:07, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 14:44:09, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 14:44:11, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 14:44:13, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 15:01:24, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 15:01:26, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 15:01:28, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 15:01:30, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 15:18:12, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 15:18:14, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 15:18:16, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 15:18:18, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 15:34:58, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 15:35:00, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 15:35:02, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 15:35:04, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 15:51:44, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 15:51:46, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 15:51:48, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 15:51:51, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 16:26:21, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 16:26:23, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 16:26:25, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 16:26:27, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 16:43:38, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 16:43:40, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 16:43:42, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 16:43:44, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 17:17:53, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 17:17:55, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 17:17:57, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 17:17:59, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 17:35:10, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 17:35:12, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 17:35:14, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 17:35:16, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 17:52:01, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 17:52:03, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 17:52:05, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 17:52:07, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 18:09:17, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'33.50\r2\r\n'
-2022-06-17 18:09:19, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'33.50\r2\r\n'
-2022-06-17 18:09:21, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'33.50\r2\r\n'
-2022-06-17 18:09:23, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'33.50\r2\r\n'
-2022-06-17 18:09:25, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'33.50\r2\r\n'
-2022-06-17 18:26:38, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 18:26:41, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 18:26:43, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 18:26:45, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 18:43:27, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'32.60\r2\r\n'
-2022-06-17 18:43:30, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'32.60\r2\r\n'
-2022-06-17 18:43:32, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'32.60\r2\r\n'
-2022-06-17 18:43:34, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'32.60\r2\r\n'
-2022-06-17 18:43:36, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: b'32.60\r2\r\n'
-2022-06-17 19:00:17, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 19:00:20, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 19:00:22, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 19:00:24, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 19:17:32, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 19:17:34, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 19:17:36, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 19:17:38, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 19:34:48, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 19:34:50, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 19:34:52, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 19:34:54, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 20:08:56, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 20:08:58, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 20:09:00, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 20:09:02, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 20:26:12, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 20:26:14, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 20:26:16, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 20:26:18, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 20:43:00, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 20:43:02, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 20:43:04, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 20:43:06, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 21:00:14, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 21:00:16, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 21:00:18, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 21:00:20, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 21:17:30, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 21:17:32, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 21:17:34, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 21:17:36, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 21:34:18, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 21:34:20, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 21:34:22, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 21:34:24, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 21:51:03, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 21:51:05, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 21:51:07, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 21:51:09, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 22:07:49, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 22:07:51, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 22:07:53, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 22:07:55, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 22:24:35, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 22:24:37, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 22:24:39, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 22:24:41, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 22:41:20, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 22:41:22, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 22:41:24, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 22:41:27, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 22:58:34, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 22:58:36, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 22:58:38, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 22:58:41, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 23:15:22, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 23:15:24, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 23:15:26, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 23:15:28, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 23:32:36, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 23:32:38, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 23:32:40, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 23:32:42, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 23:49:52, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 23:49:54, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 23:49:56, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 23:49:58, INFO, [main_logger.main:181]	Didn't receive data from arduino, off1: 0, off2: 4, recv1: None, recv2: None
-2022-06-17 23:58:51, WARNING, [main_logger.main:193]	Finished
+2022-06-18 02:03:00, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.30'
+2022-06-18 02:20:21, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.30\r29.30\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.30\\r29.30'
+2022-06-18 02:37:50, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '28.90'
+2022-06-18 02:37:52, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.30'
+2022-06-18 02:54:41, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.10'
+2022-06-18 03:11:10, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.20'
+2022-06-18 03:11:20, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.20'
+2022-06-18 03:28:18, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.2029.30\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.2029.30'
+2022-06-18 04:20:04, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.20\r29.10\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.20\\r29.10'
+2022-06-18 04:37:06, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.40'
+2022-06-18 04:54:22, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.1029.10\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.1029.10'
+2022-06-18 05:11:48, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.10\r29.10\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.10\\r29.10'
+2022-06-18 05:29:15, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '229.10'
+2022-06-18 06:04:05, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '28.80'
+2022-06-18 06:04:07, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.10'
+2022-06-18 06:21:21, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.5029.20\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.5029.20'
+2022-06-18 06:55:37, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.10'
+2022-06-18 06:55:48, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.10'
+2022-06-18 07:12:46, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.1029.20\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.1029.20'
+2022-06-18 07:30:15, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '28.90'
+2022-06-18 07:30:17, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.30'
+2022-06-18 07:47:34, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '229.30'
+2022-06-18 08:04:55, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.20\r29.30\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.20\\r29.30'
+2022-06-18 08:21:57, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.50'
+2022-06-18 08:38:38, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.3029.20\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.3029.20'
+2022-06-18 08:38:48, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.20'
+2022-06-18 08:55:27, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.60'
+2022-06-18 09:12:08, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.7029.30\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.7029.30'
+2022-06-18 09:12:18, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.30'
+2022-06-18 09:28:46, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.30'
+2022-06-18 09:28:57, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.30'
+2022-06-18 10:20:47, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.729.40\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.729.40'
+2022-06-18 10:38:10, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.50'
+2022-06-18 10:54:55, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.30\r29.30\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.30\\r29.30'
+2022-06-18 10:55:05, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.30'
+2022-06-18 11:12:09, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '229.50'
+2022-06-18 11:46:56, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.40\r29.60\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.40\\r29.60'
+2022-06-18 12:03:57, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.80'
+2022-06-18 12:20:38, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.5029.50\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.5029.50'
+2022-06-18 12:20:49, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.50'
+2022-06-18 12:37:55, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.30'
+2022-06-18 12:37:57, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.70'
+2022-06-18 12:55:14, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '229.80'
+2022-06-18 13:12:35, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.7029.80\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.7029.80'
+2022-06-18 13:30:03, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.80'
+2022-06-18 13:47:26, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '229.90'
+2022-06-18 14:04:11, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.9029.90\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.9029.90'
+2022-06-18 14:04:22, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.90'
+2022-06-18 14:21:24, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'30.30.10\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '30.30.10'
+2022-06-18 14:38:51, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '230.20'
+2022-06-18 15:30:30, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.80'
+2022-06-18 15:30:40, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.80'
+2022-06-18 15:47:05, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '31.20'
+2022-06-18 15:47:16, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '31.20'
+2022-06-18 16:03:38, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'31.9031.70\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '31.9031.70'
+2022-06-18 16:03:48, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '31.70'
+2022-06-18 16:20:55, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '31.80'
+2022-06-18 16:20:57, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '32.80'
+2022-06-18 16:37:47, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '35.10'
+2022-06-18 16:54:26, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '36.80'
+2022-06-18 17:11:35, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '35.20'
+2022-06-18 17:11:37, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '36.80'
+2022-06-18 17:28:58, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '236.60'
+2022-06-18 17:46:25, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '235.00'
+2022-06-18 18:03:51, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '233.50'
+2022-06-18 18:21:18, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '233.10'
+2022-06-18 19:47:35, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '32.90'
+2022-06-18 20:04:26, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '32.30'
+2022-06-18 20:21:28, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'32.20\r32.00\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '32.20\\r32.00'
+2022-06-18 20:38:58, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '31.40'
+2022-06-18 20:39:00, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '31.70'
+2022-06-18 20:55:49, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '31.30'
+2022-06-18 21:12:17, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '31.00'
+2022-06-18 21:12:19, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '31.20'
+2022-06-18 21:12:21, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.60'
+2022-06-18 21:12:23, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '31.00'
+2022-06-18 21:12:32, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '31.00'
+2022-06-18 21:29:23, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'31.330.90\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '31.330.90'
+2022-06-18 21:46:46, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '230.70'
+2022-06-18 22:03:31, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'30.70\r30.40\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '30.70\\r30.40'
+2022-06-18 22:03:41, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.40'
+2022-06-18 22:20:48, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.00'
+2022-06-18 22:20:50, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.50'
+2022-06-18 22:37:43, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '2\\r2'
+2022-06-18 22:37:45, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.10'
+2022-06-18 22:37:47, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.80'
+2022-06-18 22:37:49, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.80'
+2022-06-18 22:37:51, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.20'
+2022-06-18 23:12:00, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.50'
+2022-06-18 23:28:52, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.00'
+2022-06-18 23:45:18, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'30.30.00\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '30.30.00'
+2022-06-18 23:45:29, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.00'
+2022-06-18 23:58:49, WARNING, [main_logger.main:200]	Finished
