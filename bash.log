@@ -18927,3 +18927,636 @@ ValueError: invalid literal for int() with base 10: '30.00'
 
 Python script ended
 Bereits aktuell.
+[main 4767468] New data
+ 6 files changed, 1108 insertions(+), 771 deletions(-)
+ create mode 100644 data/log.2022-06-17_23.log
+ rewrite logs/log (99%)
+ copy logs/{log => log.1} (97%)
+ rename logs/{log.1 => log.3} (100%)
+Uploading LFS objects: 100% (1/1), 229 KB | 0 B/s, done
+To https://github.com/SirWalross/MessdatenSilo.git
+   ea4f8bf..4767468  main -> main
+
+2022-06-19 00:00:01
+
+Info: DMS arduino: /dev/ttyACM0, Temp arduino: /dev/ttyACM1
+Checking connected devices...
+Checking installed cores...
+Compiling sketches...
+Uploading sketches...
+Finished
+Starting
+Didn't receive data from arduino, Traceback (most recent call last):  File "measure.py", line 118, in get_data    offset(connection)  File "measure.py", line 61, in wrapper    result = f(*args, **kwargs)  File "measure.py", line 100, in offset    return 0 if int(convert(connection.readline())) == 1.0 else 4ValueError: invalid literal for int() with base 10: ''
+Didn't receive data from arduino, Traceback (most recent call last):  File "measure.py", line 118, in get_data    offset(connection)  File "measure.py", line 61, in wrapper    result = f(*args, **kwargs)  File "measure.py", line 100, in offset    return 0 if int(convert(connection.readline())) == 1.0 else 4ValueError: invalid literal for int() with base 10: ''
+Didn't receive data from arduino, Traceback (most recent call last):  File "measure.py", line 118, in get_data    offset(connection)  File "measure.py", line 61, in wrapper    result = f(*args, **kwargs)  File "measure.py", line 100, in offset    return 0 if int(convert(connection.readline())) == 1.0 else 4ValueError: invalid literal for int() with base 10: ''
+writing data, 13
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+writing data, 15
+Finished
+Starting python script:
+
+2022-06-19 00:53:19, WARNING, [main_logger.main:141]	Starting
+2022-06-19 00:53:19, WARNING, [main_logger.get_offset:79]	Time difference between last logged value and current time is very large: 3271s.
+2022-06-19 00:53:19, WARNING, [main_logger.main:151]	Connected to serial ports
+2022-06-19 00:53:22, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 165, in main
+    off1 = 0 if int(convert(con1.readline())) == 1.0 else 4
+ValueError: invalid literal for int() with base 10: ''
+2022-06-19 00:53:25, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 165, in main
+    off1 = 0 if int(convert(con1.readline())) == 1.0 else 4
+ValueError: invalid literal for int() with base 10: ''
+2022-06-19 00:53:28, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 165, in main
+    off1 = 0 if int(convert(con1.readline())) == 1.0 else 4
+ValueError: invalid literal for int() with base 10: ''
+2022-06-19 01:11:21, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.9030.00\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.9030.00'
+2022-06-19 01:28:49, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.00'
+2022-06-19 01:46:13, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '229.80'
+2022-06-19 02:03:34, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.80\r29.80\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.80\\r29.80'
+2022-06-19 02:21:04, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.40'
+2022-06-19 02:21:06, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.80'
+2022-06-19 02:38:23, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '229.80'
+2022-06-19 02:55:19, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.60'
+2022-06-19 03:11:47, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.60'
+2022-06-19 03:11:58, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.60'
+2022-06-19 03:45:47, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.60'
+2022-06-19 03:45:58, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.60'
+2022-06-19 04:19:45, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.50\r29.50\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.50\\r29.50'
+2022-06-19 04:19:56, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.50'
+2022-06-19 04:53:54, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.50\r29.60\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.50\\r29.60'
+2022-06-19 05:11:21, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.729.60\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.729.60'
+2022-06-19 05:46:08, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.50\r29.50\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.50\\r29.50'
+2022-06-19 06:03:37, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.10'
+2022-06-19 06:03:39, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.60'
+2022-06-19 06:37:54, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.50'
+2022-06-19 06:54:20, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'30.0029.50\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '30.0029.50'
+2022-06-19 06:54:31, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.50'
+2022-06-19 07:10:57, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'30.29.50\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '30.29.50'
+2022-06-19 07:11:07, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.50'
+2022-06-19 07:27:34, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.5029.50\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.5029.50'
+2022-06-19 07:27:44, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.50'
+2022-06-19 07:44:10, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'30.29.50\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '30.29.50'
+2022-06-19 07:44:21, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.50'
+2022-06-19 08:01:23, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.5029.70\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.5029.70'
+2022-06-19 08:18:15, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.50'
+2022-06-19 08:18:17, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '28.80'
+2022-06-19 08:18:19, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.20'
+2022-06-19 08:18:21, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.60'
+2022-06-19 08:18:30, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.60'
+2022-06-19 08:35:19, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'30.0029.60\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '30.0029.60'
+2022-06-19 09:10:12, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.929.70\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.929.70'
+2022-06-19 09:44:23, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.90\r29.80\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.90\\r29.80'
+2022-06-19 09:44:33, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.80'
+2022-06-19 10:17:56, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.80\r29.70\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.80\\r29.70'
+2022-06-19 10:18:06, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.70'
+2022-06-19 11:08:57, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.00'
+2022-06-19 11:09:08, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.00'
+2022-06-19 11:25:41, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.30'
+2022-06-19 11:42:44, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'30.30\r30.20\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '30.30\\r30.20'
+2022-06-19 11:59:46, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.50'
+2022-06-19 12:34:04, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.10'
+2022-06-19 12:51:09, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '230.50'
+2022-06-19 13:07:55, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'30.4030.30\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '30.4030.30'
+2022-06-19 13:08:05, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.30'
+2022-06-19 13:25:12, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.20'
+2022-06-19 13:25:14, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.80'
+2022-06-19 13:59:26, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'30.7030.70\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '30.7030.70'
+2022-06-19 14:33:54, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.90'
+2022-06-19 14:50:45, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.60'
+2022-06-19 15:07:50, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '31.20'
+2022-06-19 15:25:16, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.80'
+2022-06-19 15:25:18, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '31.20'
+2022-06-19 15:42:36, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '231.70'
+2022-06-19 16:34:28, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '33.80'
+2022-06-19 16:51:20, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '36.30'
+2022-06-19 17:08:26, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'35.00\r37.10\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '35.00\\r37.10'
+2022-06-19 17:25:55, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'35.80\r36.20\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '35.80\\r36.20'
+2022-06-19 17:42:59, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '33.70'
+2022-06-19 17:43:01, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '32.50'
+2022-06-19 17:43:03, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '32.80'
+2022-06-19 18:00:20, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '33.60'
+2022-06-19 18:00:22, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '32.60'
+2022-06-19 18:17:44, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '34.10'
+2022-06-19 18:17:46, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '32.60'
+2022-06-19 18:35:08, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '32.60'
+2022-06-19 18:35:10, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '32.70'
+2022-06-19 18:52:30, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '32.60'
+2022-06-19 19:09:54, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '33.00'
+2022-06-19 19:26:40, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'32.4032.50\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '32.4032.50'
+2022-06-19 19:26:50, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '32.50'
+2022-06-19 19:43:53, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'33.32.30\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '33.32.30'
+2022-06-19 20:00:55, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '31.80'
+2022-06-19 20:18:12, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'31.4031.20\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '31.4031.20'
+2022-06-19 20:35:01, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'31.10\r30.70\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '31.10\\r30.70'
+2022-06-19 20:35:11, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.70'
+2022-06-19 20:51:50, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.90'
+2022-06-19 21:09:07, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'30.7030.60\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '30.7030.60'
+2022-06-19 21:25:57, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'30.50\r30.30\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '30.50\\r30.30'
+2022-06-19 21:26:07, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.30'
+2022-06-19 21:43:11, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '230.30'
+2022-06-19 21:59:56, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'30.4030.10\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '30.4030.10'
+2022-06-19 22:00:07, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.10'
+2022-06-19 22:17:13, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.70'
+2022-06-19 22:17:15, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.10'
+2022-06-19 22:34:30, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'30.1030.10\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '30.1030.10'
+2022-06-19 22:51:56, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'30.30.00\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '30.30.00'
+2022-06-19 23:09:24, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '230.00'
+2022-06-19 23:26:09, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: 4, recv1: None, recv2: b'29.9029.80\r\n'
+Traceback (most recent call last):
+  File "main.py", line 180, in main
+    new_data[i + off2] += float(convert(recv2))
+ValueError: could not convert string to float: '29.9029.80'
+2022-06-19 23:26:20, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '29.80'
+2022-06-19 23:42:59, ERROR, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 176, in main
+    off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+ValueError: invalid literal for int() with base 10: '30.00'
+2022-06-19 23:58:35, WARNING, [main_logger.main:200]	Finished
+
+Python script ended
+Von https://github.com/SirWalross/MessdatenSilo
+   4767468..60946e7  main       -> origin/main
+Aktualisiere 4767468..60946e7
+Fast-forward
+ .gitlab-ci.yml                                   |  5 +-
+ convert.py                                       |  6 +-
+ data/log.2022-06-17_23.log                       |  4 +-
+ main.py                                          | 21 +++---
+ measure.py                                       | 81 +++++++++++++++---------
+ scripts/push.bash                                |  2 +
+ sketches/Temperaturmessung/Temperaturmessung.ino | 12 ++--
+ 7 files changed, 79 insertions(+), 52 deletions(-)
