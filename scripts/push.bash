@@ -8,6 +8,8 @@ while pidof  -x "python3 main.py">/dev/null; do
 done
 sleep 10
 
+du -hc --max-depth=1 .
+
 scripts/./write.bash
 
 sleep 10

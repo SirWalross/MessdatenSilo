@@ -25,6 +25,7 @@ class TimedRotatingFileHandlerWithHeader(logging.handlers.TimedRotatingFileHandl
         self.first = True
         super().__init__(filename, when=when, interval=interval, backupCount=backupCount, atTime=atTime)
         self.namer = self._namer
+        print(datetime.datetime.fromtimestamp(self.rolloverAt).strftime('%Y-%m-%d %H:%M:%S'))
 
     @staticmethod
     def _namer(filename: str) -> str:
@@ -32,10 +33,9 @@ class TimedRotatingFileHandlerWithHeader(logging.handlers.TimedRotatingFileHandl
 
     def emit(self, record):
         try:
-            if self.shouldRollover(record) or self.first:
+            if self.first and self._header:
                 stream = self.stream
-                if self._header:
-                    stream.write(self._header + self.terminator)
+                stream.write(self._header + self.terminator)
             else:
                 stream = self.stream
             msg = self.format(record)
@@ -87,7 +87,7 @@ def get_offset() -> np.ndarray:
 sys.excepthook = handle_exception
 
 
-def setup_loggers(config: Any) -> None:
+def setup_loggers(config: Any, data_folder='data', info_folder='logs') -> None:
     """
     Configure the two loggers. DataLogger for logging the data and InfoLogger for logging various information.
     """
@@ -98,7 +98,7 @@ def setup_loggers(config: Any) -> None:
     fh.append(
         TimedRotatingFileHandlerWithHeader(
             header=f"Timestamp,{','.join([f'dms{i+1}' for i in range(4)])},{','.join([f'temp{i+1}' for i in range(4)])},n",
-            filename=f"{Path(__file__).parent}/data/data",
+            filename=f"{Path(__file__).parent}/{data_folder}/data",
             when="h",
             interval=23,
             backupCount=config["DataLogger"]["backupCount"],
@@ -116,7 +116,7 @@ def setup_loggers(config: Any) -> None:
     bf = logging.Formatter("{asctime}, {levelname}, [{name}.{funcName}:{lineno}]\t{message}", datefmt=r"%Y-%m-%d %H:%M:%S", style="{")
     fh.append(
         logging.handlers.RotatingFileHandler(
-            filename=f"{Path(__file__).parent}/logs/log",
+            filename=f"{Path(__file__).parent}/{info_folder}/log",
             maxBytes=config["InfoLogger"]["maxBytes"],
             backupCount=config["InfoLogger"]["backupCount"],
         )
@@ -171,9 +171,9 @@ def main(config: Any) -> None:
                     recv1 = None
                 off1 = None
 
-                con2.write(2)
+                con2.write(1)
                 # offsets for writing data in correct column
-                off2 = 4 if int(convert(con2.readline())) == 2.0 else 0
+                off2 = 0 if int(convert(con2.readline())) == 1.0 else 4
 
                 for i in range(4):
                     recv2 = con2.readline()
@@ -185,7 +185,7 @@ def main(config: Any) -> None:
                 data = new_data
             except (TypeError, ValueError):
                 # may occur if no data was read over serial, but why???
-                logger.exception(f"Didn't receive data from arduino, off1: {off1}, off2: {off2}, recv1: {recv1}, recv2: {recv2}")
+                logger.info(f"Didn't receive data from arduino, off1: {off1}, off2: {off2}, recv1: {recv1}, recv2: {recv2}", exc_info=True)
 
             if time.time() - last_write > delta_time:
                 # write data
@@ -196,6 +196,9 @@ def main(config: Any) -> None:
                 last_write = time.time()
 
     fh[0].doRollover() # rollover the current data log file
+    
+    
+    Path(f"{Path(__file__).parent}/data/data").unlink(missing_ok=True) # delete old data file
 
     logger.warning("Finished")
 

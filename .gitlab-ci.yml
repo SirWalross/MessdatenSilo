@@ -10,7 +10,7 @@ variables:
 
 workflow:
   rules:
-    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: $CI_PIPELINE_SOURCE == "schedule" # only run this pipeline upon a schedule event
     
 convert:
   stage: convert
@@ -27,9 +27,6 @@ convert:
 upload:
   stage: upload
   image: curlimages/curl:latest
-  script:
-    - echo "Compiling the code..."
-    - echo "Compile complete."
   script:
     - 'curl --header "JOB-TOKEN: ${CI_JOB_TOKEN}" --upload-file data.zip "${PACKAGE_REGISTRY_URL}/data.zip"'
 

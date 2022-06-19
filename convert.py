@@ -1,6 +1,6 @@
 """Convert csv data into mat files to read into matlab.
 
-Combines the files from one weak and converts it into a single '.mat' file.
+Combines the files from one week and converts it into a single '.mat' file.
 """
 
 from datetime import datetime, timedelta
@@ -41,14 +41,14 @@ for file in files:
 
 Path(f"{Path(__file__).parent}/out").mkdir(parents=True, exist_ok=True)
 
-# save each week as seperate '.mat' file
+# save each week as seperate '.mat' file in 'out' folder
 for week_start, arr in data.items():
     scipy.io.savemat(
         f"{Path(__file__).parent}/out/data.{week_start}.mat",
         mdict={name: column for name, column in zip(header, np.split(arr, arr.shape[1], axis=1))},
     )
 
-# zip folder
+# zip 'out' folder
 shutil.make_archive("data", "zip", "out")
 
 # Update CHANGELOG.md

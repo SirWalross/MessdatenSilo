@@ -12,15 +12,18 @@ import os
 import time
 import threading
 import traceback
+from typing import Any
 import serial
 import serial.serialutil
+import sys
+import datetime
+import yaml
+from pathlib import Path
 
+import numpy as np
 from multiprocessing_logging import install_mp_handler
 
-# we want to be able to log from multiple processes
-logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger()
-install_mp_handler()
+from main import logger, data_logger, fh, get_offset, setup_loggers
 
 # separate logger that only stores events into a file
 prof_logger = logging.getLogger("profiling")
@@ -84,10 +87,10 @@ def read_value(connection: serial.Serial) -> bytes:
 
 
 @log_profile("read")
-def read(connection: serial.Serial):
-    for _ in range(4):
-        recv1 = read_value(connection)
-        float(convert(recv1))
+def read(connection: serial.Serial, data: np.ndarray, off: int):
+    for i in range(4):
+        recv = read_value(connection)
+        data[i + off] += float(convert(recv))
 
 
 @log_profile("write")
@@ -96,14 +99,14 @@ def write(connection: serial.Serial):
 
 
 @log_profile("offset")
-def offset(connection: serial.Serial):
+def offset(connection: serial.Serial) -> int:
     return 0 if int(convert(connection.readline())) == 1.0 else 4
 
 
 @log_profile("write_data")
-def write_data(n: int):
-    print(f"writing data, {n}")
-    time.sleep(10e-3)
+def write_data(data: np.ndarray, n: int, factors: np.ndarray, offsets: np.ndarray):
+    data_logger.info(",".join([f"{(value/n) * factors[i] - offsets[i]:.5f}" for i, value in enumerate(data)]) + f",{n}")
+    logger.debug("Wrote data")
 
 
 def convert(data) -> str:
@@ -111,42 +114,62 @@ def convert(data) -> str:
 
 
 @log_profile("get_data")
-def get_data(con1: serial.Serial, con2: serial.Serial):
+def get_data(con1: serial.Serial, con2: serial.Serial) -> np.ndarray:
+    data = np.zeros((8,))
     try:
         for connection in [con1, con2]:
             write(connection)
-            offset(connection)
-            read(connection)
+            off = offset(connection)
+            read(connection, data, off)
 
     except (TypeError, ValueError):
         # may occur if no data was read over serial
-        log_event(ph="I", ts=time_usec(), name="NoData", cat="NoData", **base_info)
-        print(f"Didn't receive data from arduino, {traceback.format_exc().replace(os.linesep, '')}")
+        logger.info(f"Didn't receive data from arduino", exc_info=True)
+    return data
 
 
 @log_profile("loop")
-def loop(con1: serial.Serial, con2: serial.Serial):
+def loop(con1: serial.Serial, con2: serial.Serial, factors: np.ndarray, offsets: np.ndarray):
     last_write = time.time()
     delta_time = 30
     n = 0
+    data = np.zeros((8,))
+
     while time.time() - last_write < delta_time:
-        get_data(con1, con2)
+        data += get_data(con1, con2)
         n += 1
-    write_data(n)
+    write_data(data, n, factors, offsets)
 
 
 @log_profile("main")
-def main() -> None:
+def main(config: Any) -> None:
     print("Starting")
-    try:
-        with serial.Serial("/dev/ttyACM0", 9600, timeout=3) as con1, serial.Serial("/dev/ttyACM1", 9600, timeout=3) as con2:
-            for _ in range(100):
-                loop(con1, con2)
-    except serial.serialutil.SerialException:
-        print(traceback.format_exc())
-    print("Finished")
+    Path(f"{Path(__file__).parent}/test_data").mkdir(parents=True, exist_ok=True)
+    Path(f"{Path(__file__).parent}/test_logs").mkdir(parents=True, exist_ok=True)
+
+    setup_loggers(config, "test_data", "test_logs")
+
+    delta_time = config["Data"]["delta_time"]  # log averaged out data every n seconds
+    end_time = datetime.datetime.combine(datetime.date.today(), datetime.time(1, 0, 0, 0))
+
+    logger.warning("Starting")
+
+    factors: np.ndarray = np.hstack((np.array(config["Data"]["factors"]), np.ones((4,))))
+    offsets: np.ndarray = np.hstack((get_offset(), np.zeros((4,))))
+
+    logger.info(
+        f"Factors: {', '.join(f'{factor:.3f}' for factor in factors[:4])}, Offset: {', '.join(f'{offset:.3f}' for offset in offsets[:4])}"
+    )
+
+    with serial.Serial("/dev/ttyACM0", 9600, timeout=3) as con1, serial.Serial("/dev/ttyACM1", 9600, timeout=3) as con2:
+        for _ in range(100):
+            loop(con1, con2, factors, offsets)
+
+    fh[0].doRollover() # rollover the current data log file
+        
+    logger.warning("Finished")
 
 
 if __name__ == "__main__":
-    main()
+    main(yaml.safe_load(open(f"{Path(__file__).parent}/config.yml")))
     convert_log_to_trace("profiling.log", "profiling_trace.json")
