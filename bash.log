@@ -19560,3 +19560,51 @@ Fast-forward
  scripts/push.bash                                |  2 +
  sketches/Temperaturmessung/Temperaturmessung.ino | 12 ++--
  7 files changed, 79 insertions(+), 52 deletions(-)
+[main fa61e45] New data
+ 4 files changed, 1132 insertions(+), 1 deletion(-)
+ create mode 100644 data/log.2022-06-18_23.log
+To https://github.com/SirWalross/MessdatenSilo.git
+   60946e7..fa61e45  main -> main
+
+2022-06-20 00:00:01
+
+804K	./.github
+3,4M	./data
+13M	./.git
+20K	./sketches
+728K	./logs
+20K	./scripts
+46M	.
+46M	insgesamt
+Info: DMS arduino: /dev/ttyACM0, Temp arduino: /dev/ttyACM1
+Checking connected devices...
+Checking installed cores...
+Compiling sketches...
+Uploading sketches...
+Finished
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/home/pi/Desktop/MessdatenSilo/main.py", line 56, in handle_exception
+    logger.error("Uncaught exception", exc_info=(exc_type, exc_value, exc_traceback))
+NameError: name 'logger' is not defined
+
+Original exception was:
+Traceback (most recent call last):
+  File "measure.py", line 26, in <module>
+    from main import logger, data_logger, fh, get_offset, setup_loggers
+ImportError: cannot import name 'logger' from 'main' (/home/pi/Desktop/MessdatenSilo/main.py)
+Starting python script:
+
+2022-06-20 22:58:35
+2022-06-20 00:00:56, WARNING, [main_logger.main:141]	Starting
+2022-06-20 00:00:56, WARNING, [main_logger.main:151]	Connected to serial ports
+2022-06-20 23:58:31, ERROR, [main_logger.handle_exception:56]	Uncaught exception
+Traceback (most recent call last):
+  File "main.py", line 207, in <module>
+    main(yaml.safe_load(open(f"{Path(__file__).parent}/config.yml")))
+  File "main.py", line 201, in main
+    Path(f"{Path(__file__).parent}/data/data").unlink(missing_ok=True) # delete old data file
+TypeError: unlink() got an unexpected keyword argument 'missing_ok'
+
+Python script ended
+Bereits aktuell.
