@@ -4,3 +4,4 @@ CHANGELOG.md
 profiling.log
 data/data
 data.zip
+__pycache__/**

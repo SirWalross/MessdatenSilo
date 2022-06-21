@@ -152,8 +152,6 @@ def main(config: Any) -> None:
         last_write = time.time()
         data = np.zeros((8,))
         n = 0
-        recv1, recv2 = None, None
-        off1, off2 = None, None
         while datetime.datetime.now() + datetime.timedelta(seconds=delta_time) < end_time:
 
             try:
@@ -162,30 +160,24 @@ def main(config: Any) -> None:
 
                 con1.write(1)
                 # offsets for writing data in correct column
-                off1 = 0 if int(convert(con1.readline())) == 1.0 else 4
+                off = 0 if int(convert(con1.readline())) == 1.0 else 4
 
                 # read data
                 for i in range(4):
-                    recv1 = con1.readline()
-                    new_data[i + off1] += float(convert(recv1))
-                    recv1 = None
-                off1 = None
+                    new_data[i + off] += float(convert(con1.readline()))
 
                 con2.write(1)
                 # offsets for writing data in correct column
-                off2 = 0 if int(convert(con2.readline())) == 1.0 else 4
+                off = 0 if int(convert(con2.readline())) == 1.0 else 4
 
                 for i in range(4):
-                    recv2 = con2.readline()
-                    new_data[i + off2] += float(convert(recv2))
-                    recv2 = None
-                off2 = None
+                    new_data[i + off] += float(convert(con2.readline()))
 
                 n += 1
                 data = new_data
             except (TypeError, ValueError):
-                # may occur if no data was read over serial, but why???
-                logger.info(f"Didn't receive data from arduino, off1: {off1}, off2: {off2}, recv1: {recv1}, recv2: {recv2}", exc_info=True)
+                # may occur if no data was read over serial
+                logger.info("Didnt receive data from arduino", exc_info=True)
 
             if time.time() - last_write > delta_time:
                 # write data
@@ -196,9 +188,6 @@ def main(config: Any) -> None:
                 last_write = time.time()
 
     fh[0].doRollover() # rollover the current data log file
-    
-    
-    Path(f"{Path(__file__).parent}/data/data").unlink(missing_ok=True) # delete old data file
 
     logger.warning("Finished")
 
