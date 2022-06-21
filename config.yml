@@ -1,5 +1,5 @@
 DataLogger:
-    backupCount: 70 # number of datalogs to keep
+    backupCount: 350 # number of datalogs to keep
     levels: # log level for outputting to file and to stdout respectivly
         - INFO
         - WARNING
