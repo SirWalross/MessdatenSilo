@@ -979,3 +979,28 @@ Traceback (most recent call last):
   File "main.py", line 201, in main
     Path(f"{Path(__file__).parent}/data/data").unlink(missing_ok=True) # delete old data file
 TypeError: unlink() got an unexpected keyword argument 'missing_ok'
+2022-06-21 00:00:54, WARNING, [main_logger.main:141]	Starting
+2022-06-21 00:00:54, INFO, [main_logger.main:147]	Factors: 1.855, 0.000, 0.923, -1.000, Offset: -4.959, 0.000, 0.444, 0.441
+2022-06-21 00:00:54, WARNING, [main_logger.main:151]	Connected to serial ports
+2022-06-21 00:00:57, INFO, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 165, in main
+    off1 = 0 if int(convert(con1.readline())) == 1.0 else 4
+ValueError: invalid literal for int() with base 10: ''
+2022-06-21 00:01:00, INFO, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 165, in main
+    off1 = 0 if int(convert(con1.readline())) == 1.0 else 4
+ValueError: invalid literal for int() with base 10: ''
+2022-06-21 00:01:03, INFO, [main_logger.main:188]	Didn't receive data from arduino, off1: None, off2: None, recv1: None, recv2: None
+Traceback (most recent call last):
+  File "main.py", line 165, in main
+    off1 = 0 if int(convert(con1.readline())) == 1.0 else 4
+ValueError: invalid literal for int() with base 10: ''
+2022-06-21 23:58:30, ERROR, [main_logger.handle_exception:56]	Uncaught exception
+Traceback (most recent call last):
+  File "main.py", line 207, in <module>
+    main(yaml.safe_load(open(f"{Path(__file__).parent}/config.yml")))
+  File "main.py", line 201, in main
+    Path(f"{Path(__file__).parent}/data/data").unlink(missing_ok=True) # delete old data file
+TypeError: unlink() got an unexpected keyword argument 'missing_ok'

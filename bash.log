@@ -19608,3 +19608,75 @@ TypeError: unlink() got an unexpected keyword argument 'missing_ok'
 
 Python script ended
 Bereits aktuell.
+[main 0e646b3] New data
+ 4 files changed, 76 insertions(+)
+ create mode 100644 __pycache__/main.cpython-37.pyc
+ create mode 100644 data/log.2022-06-19_23.log
+Uploading LFS objects: 100% (1/1), 257 KB | 0 B/s, done
+To https://github.com/SirWalross/MessdatenSilo.git
+   fa61e45..0e646b3  main -> main
+
+2022-06-21 00:00:01
+
+804K	./.github
+3,7M	./data
+12K	./__pycache__
+14M	./.git
+20K	./sketches
+728K	./logs
+20K	./scripts
+47M	.
+47M	insgesamt
+Info: DMS arduino: /dev/ttyACM0, Temp arduino: /dev/ttyACM1
+Checking connected devices...
+Checking installed cores...
+Compiling sketches...
+Uploading sketches...
+Finished
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/home/pi/Desktop/MessdatenSilo/main.py", line 56, in handle_exception
+    logger.error("Uncaught exception", exc_info=(exc_type, exc_value, exc_traceback))
+NameError: name 'logger' is not defined
+
+Original exception was:
+Traceback (most recent call last):
+  File "measure.py", line 26, in <module>
+    from main import logger, data_logger, fh, get_offset, setup_loggers
+ImportError: cannot import name 'logger' from 'main' (/home/pi/Desktop/MessdatenSilo/main.py)
+Starting python script:
+
+2022-06-21 22:58:31
+2022-06-21 00:00:54, WARNING, [main_logger.main:141]	Starting
+2022-06-21 00:00:54, WARNING, [main_logger.main:151]	Connected to serial ports
+2022-06-21 23:58:30, ERROR, [main_logger.handle_exception:56]	Uncaught exception
+Traceback (most recent call last):
+  File "main.py", line 207, in <module>
+    main(yaml.safe_load(open(f"{Path(__file__).parent}/config.yml")))
+  File "main.py", line 201, in main
+    Path(f"{Path(__file__).parent}/data/data").unlink(missing_ok=True) # delete old data file
+TypeError: unlink() got an unexpected keyword argument 'missing_ok'
+
+Python script ended
+Von https://github.com/SirWalross/MessdatenSilo
+   0e646b3..c66a530  main       -> origin/main
+Aktualisiere 0e646b3..c66a530
+Fast-forward
+ .gitignore                                         |   3 +-
+ config.yml                                         |   2 +-
+ ...log.2022-06-15_23.log => log.2022-06-16_00.log} |   0
+ ...log.2022-06-16_23.log => log.2022-06-17_00.log} |   0
+ ...log.2022-06-17_23.log => log.2022-06-18_00.log} |   0
+ data/log.2022-06-18_23.log                         |   3 -
+ data/log.2022-06-19_00.log                         |   3 +
+ ...log.2022-06-19_23.log => log.2022-06-20_00.log} |   0
+ main.py                                            |  27 ++--
+ scripts/push.bash                                  |  20 ++-
+ sketches/DmsMessung/DmsMessung.ino                 | 145 ++++++---------------
+ 11 files changed, 66 insertions(+), 137 deletions(-)
+ rename data/{log.2022-06-15_23.log => log.2022-06-16_00.log} (100%)
+ rename data/{log.2022-06-16_23.log => log.2022-06-17_00.log} (100%)
+ rename data/{log.2022-06-17_23.log => log.2022-06-18_00.log} (100%)
+ delete mode 100644 data/log.2022-06-18_23.log
+ create mode 100644 data/log.2022-06-19_00.log
+ rename data/{log.2022-06-19_23.log => log.2022-06-20_00.log} (100%)
