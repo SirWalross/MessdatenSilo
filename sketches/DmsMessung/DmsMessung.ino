@@ -1,8 +1,8 @@
 #include <HX711_ADC.h>
 
-HX711_ADC loadCell[] = {HX711_ADC(2, 3), HX711_ADC(6, 7), HX711_ADC(8, 9), HX711_ADC(12, 13)};
-float measurement[4];
-float offset[4];
+HX711_ADC loadCells[] = {HX711_ADC(2, 3), HX711_ADC(6, 7), HX711_ADC(8, 9), HX711_ADC(12, 13)};
+float measurements[4];
+float offsets[4];
 
 int count = 1000;
 long stabilisation = 2000;
@@ -18,7 +18,7 @@ void readData() {
         }
 
         for (int j = 0; j < 4; j++) {
-            measurement[j] += loadCell[j].getRareData() - offset[j];
+            measurements[j] += loadCells[j].getRareData() - offsets[j];
         }
 
         delay(1);
@@ -50,17 +50,17 @@ void setup() {
     Serial.begin(9600);
 
     for (int i = 0; i < 4; i++) {
-        loadCell[i].begin();
+        loadCells[i].begin();
     }
 
     for (int i = 0; i < 4; i++) {
-        loadCell[i].start(stabilisation, true);
+        loadCells[i].start(stabilisation, true);
     }
 
     readData();
 
     for (int i = 0; i < 4; i++) {
-        offset[i] = measurement[i];
+        offsets[i] = measurements[i];
     }
 
     delay(500);
